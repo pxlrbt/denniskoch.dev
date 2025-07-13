@@ -1,0 +1,20 @@
+.footer {
+    color: white;
+    background-color: var(--color-blue-dark);
+
+    a {
+        text-decoration: none;
+        transition: color .4s;
+
+        &:hover {
+            color: var(--color-peach);
+        }
+    }
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: var(--text-sm);
+}

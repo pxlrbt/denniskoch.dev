@@ -1,0 +1,13 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@layer reset, base, components, utilities;
+
+@import 'components/reset.css' layer(reset);
+@import 'components/fonts.css' layer(base);
+@import 'components/base.css' layer(base);
+
+@import 'components/footer.css' layer(component);
+
+@import 'utilities.css' layer(utilities);

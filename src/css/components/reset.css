@@ -1,0 +1,91 @@
+/* 🧰 Global Reset and Base Styles */
+
+/* 📦 Box Sizing Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 🚫 Margin Reset */
+* {
+  margin: 0;
+}
+
+/* Prevent font size inflation (https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/) */
+:root {
+  text-size-adjust: none;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 🖼️ Media Element Defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 📝 Form Element Typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 📄 Heading Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  text-wrap: balance;
+}
+
+/* 🔘 Button Reset and Styling */
+button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  /* Accessibility: Restore outline for keyboard focus */
+  &:focus-visible {
+    outline: revert;
+  }
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* 🔗 Link Reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.text-wrap {
+  line-height: 1.5;
+  text-wrap: pretty;
+
+  /* Remove top margin from first child and bottom margin from last child */
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
