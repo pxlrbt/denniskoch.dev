@@ -43,6 +43,7 @@ body {
     font-weight: 300;
     line-height: 1.5;
     background-color: var(--color-blue-dark);
+    overflow-x: hidden;
 
     color: var(--color-text);
 }
@@ -177,7 +178,18 @@ p:not(:last-child), ul:not(:last-child) {
             transform: translateY(-4rem);
         }
 
+        .blob {
+            position: fixed;
+            z-index: -1;
+            width: 55rem;
+            max-width: none;
+            transform: translate(-19rem, -12rem);
+            filter: blur(40px);
+        }
+
         img {
+            position: relative;
+            z-index: 1;
             display: block;
             width: 100%;
             aspect-ratio: 1 / 1;
