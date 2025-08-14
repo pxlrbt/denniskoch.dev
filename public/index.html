@@ -7,7 +7,7 @@
     <link rel="me" href="https://phpc.social/@denniskoch">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale= 1.0">
 
-    <link href="src/css/main.css" rel="stylesheet">
+    <link href="dist/main.css" rel="stylesheet">
 
     <title>Dennis Koch | Freelance Full-Stack-Developer</title>
 
@@ -27,6 +27,11 @@
         data-website-id="9a996427-0dea-49b7-98ee-9bda77af0960"
         data-host-url="https://cloud.umami.is"
     ></script>
+
+    <!-- Browsersync script for development -->
+    <script id="__bs_script__">
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js'><\/script>".replace("HOST", location.hostname));
+    </script>
 </head>
 
 <body>
