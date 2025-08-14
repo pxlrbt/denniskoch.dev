@@ -2,9 +2,7 @@
     $title = 'Dennis Koch | Freelance Full-Stack-Developer';
     $description = 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.';
     $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
-    $fediverse_creator = '@denniskoch@phpc.social';
     $canonical = 'https://denniskoch.dev';
-    $lang = 'en';
     $hide_home_link = true;
 ?>
 
@@ -33,7 +31,7 @@
                     </div>
                 </div>
                 <div class="about__image">
-                    <img src="./src/images/dennis-koch.jpg" alt="">
+                    <img src="./assets/images/dennis-koch.jpg" alt="">
                     <svg class="blob" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(376.785703845383 342.1997893108059)"><path d="M204.3 -80.4C218.4 -23 151.5 46.8 95.4 74.1C39.2 101.4 -6.3 86.3 -32.3 63C-58.3 39.7 -64.8 8.3 -56.2 -41.6C-47.6 -91.5 -23.8 -159.7 35.7 -171.3C95.1 -182.9 190.2 -137.8 204.3 -80.4" fill="#ff9f5f"></path></g></svg>
 
                     <div class="social-icons">

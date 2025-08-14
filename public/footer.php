@@ -1,8 +1,8 @@
     <footer class="footer">
-        <div class="section <?php echo $footer_wrapper_class ?? 'wrapper'; ?>">
+        <div class="section wrapper">
             <nav class="footer__nav" aria-label="Footer">
                 <?php if (!isset($hide_home_link) || !$hide_home_link): ?>
-                <a href="./">Home</a>
+                    <a href="./">Home</a>
                 <?php endif; ?>
 
                 <a href="./imprint.php">Legal Notice</a>

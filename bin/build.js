@@ -4,8 +4,8 @@ async function buildCSS() {
   try {
     console.log('Building CSS with esbuild...');
     await build({
-      entryPoints: ['../public/src/css/main.css'],
-      outfile: '../public/dist/main.css',
+      entryPoints: ['./public/assets/css/main.css'],
+      outfile: './public/dist/main.css',
       bundle: true,
       minify: true,
       loader: {

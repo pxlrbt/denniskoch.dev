@@ -4,8 +4,6 @@
     $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
     $canonical = 'https://denniskoch.dev/privacy.html';
     $robots = 'noindex, follow';
-    $lang = 'de';
-    $footer_wrapper_class = 'container';
 
     include 'header.php';
 ?>
