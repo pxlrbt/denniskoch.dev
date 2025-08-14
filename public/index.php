@@ -1,40 +1,15 @@
-<!doctype html>
-<html lang="en">
+<?php
+    $title = 'Dennis Koch | Freelance Full-Stack-Developer';
+    $description = 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.';
+    $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
+    $fediverse_creator = '@denniskoch@phpc.social';
+    $canonical = 'https://denniskoch.dev';
+    $lang = 'en';
+    $hide_home_link = true;
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/src/images/favicon.svg" />
-    <link rel="me" href="https://phpc.social/@denniskoch">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale= 1.0">
+<?php include 'header.php'; ?>
 
-    <link href="dist/main.css" rel="stylesheet">
-
-    <title>Dennis Koch | Freelance Full-Stack-Developer</title>
-
-    <meta name="description" content="Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.">
-    <meta name="keywords" content="Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions">
-
-    <meta name="fediverse:creator" content="@denniskoch@phpc.social">
-    <meta rel="canonical" href="https://denniskoch.dev">
-
-    <meta name="author" content="Dennis Koch">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="rgba(25.021, 56.75, 72.545)">
-
-    <script
-        defer
-        src="stats.js"
-        data-website-id="9a996427-0dea-49b7-98ee-9bda77af0960"
-        data-host-url="https://cloud.umami.is"
-    ></script>
-
-    <!-- Browsersync script for development -->
-    <script id="__bs_script__">
-        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js'><\/script>".replace("HOST", location.hostname));
-    </script>
-</head>
-
-<body>
     <main>
         <div class="section about">
             <div class="wrapper about__inner">
@@ -92,18 +67,4 @@
             </div>
         </div>
 
-
-        <footer class="footer">
-            <div class="section wrapper">
-                <nav class="footer__nav" aria-label="Footer">
-                    <a href="./imprint.html">Legal Notice</a>
-
-                    <a href="./privacy.html">Privacy Policy</a>
-                </nav>
-            </div>
-        </footer>
-
-        <!-- <script type="module" src="/src/js/main.js"></script> -->
-</body>
-
-</html>
+<?php include 'footer.php'; ?>
