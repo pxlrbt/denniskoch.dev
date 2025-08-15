@@ -1,0 +1,20 @@
+@layer reset, base, components, utilities;
+
+@import 'reset.css' layer(reset);
+@import 'fonts.css' layer(base);
+@import 'tokens.css' layer(base);
+@import 'base.css' layer(base);
+
+@import 'components/buttons.css' layer(component);
+@import 'components/badges.css' layer(component);
+@import '../components/tooltips/index.css' layer(component);
+
+
+@import 'components/header.css' layer(component);
+@import 'components/footer.css' layer(component);
+@import 'components/about.css' layer(component);
+@import 'components/social-icons.css' layer(component);
+@import 'components/projects.css' layer(component);
+
+@import 'components/layout.css' layer(utilities);
+@import 'utilities.css' layer(utilities);

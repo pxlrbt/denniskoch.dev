@@ -1,0 +1,61 @@
+
+.button {
+    --bg-color: var(--color-blue);
+    padding: 0.5rem 1.25rem;
+
+    background: var(--bg-color);
+    border: 2px solid var(--bg-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--rounding);
+
+    font-size: var(--text-sm);
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        color: white;
+        --shadow: var(--shadow-hover);
+        --bg-color: var(--color-peach);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--color-peach);
+        outline-offset: 2px;
+    }
+
+    &.-sponsors {
+        --bg-color: var(--color-github-sponsors);
+        --shadow-color: oklch(from var(--color-github-sponsors) .4 c h) !important;
+
+        display: flex;
+        gap: calc(var(--spacing-x) * .5);
+        align-items: center;
+        box-shadow: .2em 0.2em 0 var(--shadow-color);
+
+        &:hover {
+            --shadow: var(--shadow-hover);
+            box-shadow: var(--shadow-hover);
+            --bg-color: oklch(from var(--color-github-sponsors) calc(l - 0.1) c h);
+        }
+
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+}
+
+/* BUTTON VARIATIONS */
+.button--secondary {
+    background: transparent;
+    border-color: var(--color-peach);
+    color: var(--color-peach);
+}
+
+.button--secondary:hover {
+    background: var(--color-peach);
+    color: white;
+}

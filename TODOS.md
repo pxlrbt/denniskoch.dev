@@ -1,4 +1,0 @@
-# TODOS.md
-
-- [ ] Convert the static HTML files to PHP files and extract the header/footer into a separate file
-- [ ] Add a new "Projects" showcase page. I want to add a new "Projects" page. The focus should be on my latest service "Filament Studio" A visual editor to    build Filament Themes. I have a demo video and want to add a short description and a button linking to the page. Next I'd like to show my packages in a grid. I have small 16:9 ratio thumbnails for all of them. I'd like to display them in a card. At the end of the page I want to add a Talk I gave at the Laravel Switzerland Meetup. I want to upload a thumbnail that links to YouTube and add a button for "Video" and "Slides". Make sure it matches the current style of the page. Create new CSS files if the new components don't fit an existing category.

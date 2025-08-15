@@ -1,6 +1,6 @@
 # denniskoch.dev
 
-__Author:__ [Dennis Koch](info@pixelarbeit.de)
+__Author:__ [Dennis Koch](hey@denniskoch.dev)
 
 ## Get started
 ### Install dependencies

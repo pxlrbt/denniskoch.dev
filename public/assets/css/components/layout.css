@@ -1,0 +1,22 @@
+.wrapper {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 0.75rem;
+    max-width: var(--content-width);
+
+    @media (min-width: 30rem) {
+        padding-inline: 1.5rem;
+    }
+}
+
+.section {
+    padding-block: 4rem;
+
+    @media (min-width: 760px) {
+        padding-block: 6rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding-block: 8rem;
+    }
+}

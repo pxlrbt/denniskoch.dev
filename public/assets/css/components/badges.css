@@ -1,0 +1,17 @@
+.badges {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    font-weight: bold;
+    background-color: oklch(from var(--color-peach-lightest) .2 c h);
+    color: var(--color-peach-light);
+    border: 1px solid var(--color-peach-light);
+
+    border-radius: var(--rounding);
+    padding: 0.05em 0.375em;
+    font-size: 0.875rem;
+}

@@ -30,7 +30,7 @@ async function startDevServer() {
     });
 
     const ctx = await context({
-      entryPoints: ['./public/assets/css/main.css'],
+      entryPoints: ['./public/assets/css/_main.css'],
       outfile: './public/dist/main.css',
       bundle: true,
       loader: {
@@ -47,7 +47,7 @@ async function startDevServer() {
     console.log('Watching for CSS changes...');
 
     // Watch the output CSS file and trigger injection
-    watch('dist/main.css').on('change', () => {
+    watch('./public/dist/main.css').on('change', () => {
       console.log('CSS file changed, injecting...');
       bs.reload('*.css');
     });

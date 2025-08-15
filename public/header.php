@@ -37,3 +37,20 @@
 </head>
 
 <body>
+    <header>
+        <div class="wrapper">
+            <nav aria-label="Main Navigation">
+                <a href="/" class="logo">
+                    <em>Dennis Koch</em>
+                </a>
+
+                <ul>
+                    <?php
+                        $current_page = basename($_SERVER['PHP_SELF'], '.php');
+                    ?>
+                    <li><a href="./" class="<?php echo ($current_page === 'index' || $current_page === '') ? 'active' : ''; ?>">Home</a></li>
+                    <li><a href="./projects.php" class="<?php echo ($current_page === 'projects') ? 'active' : ''; ?>">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>

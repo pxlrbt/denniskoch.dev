@@ -1,0 +1,59 @@
+
+
+/** ABOUT */
+.about {
+    .about__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-block: 4rem;
+        max-width: 60rem;
+
+        @media (width > 56rem) {
+            flex-direction: row;
+        }
+    }
+
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about__image {
+        flex: 0 0 14rem;
+        display: flex;
+        flex-direction: column;
+
+        align-items: start;
+
+        @media (width > 56rem) {
+            transform: translateY(-4rem);
+        }
+
+        .blob {
+            position: fixed;
+            z-index: -1;
+            width: 55rem;
+            max-width: none;
+            transform: translate(-19rem, -12rem);
+            filter: blur(40px);
+        }
+
+        img {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 1rem;
+            object-fit: cover;
+            max-width: 20rem;
+            margin-inline: auto;
+
+            transform: rotate(1deg);
+            box-shadow: var(--shadow)
+        }
+    }
+}

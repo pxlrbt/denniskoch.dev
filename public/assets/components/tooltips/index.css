@@ -1,0 +1,15 @@
+.tooltip {
+    display: none;
+    font-size: var(--text-xs);
+    padding: 0 .25em;
+    border-radius: var(--rounding);
+    background-color: var(--color-peach-light);
+}
+
+[data-tooltip]:hover > [popover] {
+    display: block;
+    --anchor-attr: attr(data-anchor);
+    position-anchor: var(--anchor-name);
+    top: calc(anchor(bottom) + 0.5em);
+    justify-self: anchor-center;
+}

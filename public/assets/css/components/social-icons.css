@@ -1,0 +1,23 @@
+
+
+.social-icons {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        transition: color .4s;
+
+        &:hover {
+            color: var(--color-peach);
+        }
+    }
+
+    svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
