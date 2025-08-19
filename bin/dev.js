@@ -30,7 +30,7 @@ async function startDevServer() {
     });
 
     const ctx = await context({
-      entryPoints: ['./public/assets/css/_main.css'],
+      entryPoints: ['./resources/assets/css/_main.css'],
       outfile: './public/dist/main.css',
       bundle: true,
       loader: {

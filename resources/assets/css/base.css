@@ -8,6 +8,10 @@
     outline-offset: 2px;
 }
 
+:root {
+    color-scheme: dark;
+}
+
 body {
     font-family: var(--font-text);
     font-size: var(--text-normal);
@@ -22,12 +26,12 @@ body {
 h1 {
     font-size: var(--text-xl);
     font-family: var(--font-headline);
-    line-height: .9;
+    line-height: 1.1;
     font-weight: 900;
     letter-spacing: -0.025em;
     color: var(--color-peach-medium);
 
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 
     &::selection,
     ::selection {
@@ -42,14 +46,10 @@ h2 {
     line-height: 1.15;
     font-weight: 900;
     margin-bottom: .25em;
-
-    &:not(:first-child) {
-        margin-top: 1rem;
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 1.5em;
+    margin-top: 2em;
 
     &:first-of-type {
         margin-top: 0;

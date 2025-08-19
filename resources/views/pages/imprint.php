@@ -1,12 +1,11 @@
 <?php
-    $title = 'Impressum | Dennis Koch';
-    $description = 'Rechtliche Informationen und Kontaktdaten zu Dennis Koch.';
+    $title = 'Legal Notice | Dennis Koch';
+    $description = 'Legal information and contact details for Dennis Koch.';
     $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
-    $canonical = 'https://denniskoch.dev/imprint.html';
     $robots = 'noindex, follow';
 ?>
 
-<?php include 'header.php'; ?>
+<?php include __DIR__.'/../partials/header.php'; ?>
 
     <main>
         <article class="section wrapper text-wrap">
@@ -27,4 +26,4 @@
         </article>
     </main>
 
-<?php include 'footer.php'; ?>
+<?php include __DIR__.'/../partials/footer.php'; ?>

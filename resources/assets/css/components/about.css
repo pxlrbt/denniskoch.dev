@@ -2,6 +2,7 @@
 
 /** ABOUT */
 .about {
+    position: relative;
     .about__inner {
         display: flex;
         flex-direction: column;
@@ -30,15 +31,6 @@
 
         @media (width > 56rem) {
             transform: translateY(-4rem);
-        }
-
-        .blob {
-            position: fixed;
-            z-index: -1;
-            width: 55rem;
-            max-width: none;
-            transform: translate(-19rem, -12rem);
-            filter: blur(40px);
         }
 
         img {

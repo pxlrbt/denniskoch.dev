@@ -1,11 +1,10 @@
 <?php
-    $title = 'Impressum | Dennis Koch';
-    $description = 'Informationen zum Datenschutz und zur Verarbeitung personenbezogener Daten auf dieser Website.';
+    $title = 'Privacy Policy | Dennis Koch';
+    $description = 'Privacy policy details.';
     $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
-    $canonical = 'https://denniskoch.dev/privacy.html';
     $robots = 'noindex, follow';
 
-    include 'header.php';
+    include __DIR__.'/../partials/header.php';
 ?>
 
 <main>
@@ -85,4 +84,4 @@
     </article>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include __DIR__.'/../partials/footer.php'; ?>

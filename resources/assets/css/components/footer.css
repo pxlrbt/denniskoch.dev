@@ -14,7 +14,12 @@
 
 .footer__nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: var(--spacing-x);
     font-size: var(--text-sm);
+
+    @media (width > 40rem) {
+        gap: calc(var(--spacing-x) * 2);
+    }
 }

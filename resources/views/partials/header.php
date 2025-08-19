@@ -7,7 +7,7 @@
     <link rel="me" href="https://phpc.social/@denniskoch">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale= 1.0">
 
-    <link href="dist/main.css" rel="stylesheet">
+    <link href="/dist/main.css" rel="stylesheet">
 
     <title><?php echo $title ?? 'Dennis Koch | Freelance Full-Stack-Developer'; ?></title>
 
@@ -15,7 +15,6 @@
     <meta name="keywords" content="<?php echo $keywords ?? 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions'; ?>">
 
     <meta name="fediverse:creator" content="@denniskoch@phpc.social">
-    <meta rel="canonical" href="<?php echo $canonical ?? 'https://denniskoch.dev'; ?>">
 
     <meta name="author" content="Dennis Koch">
     <meta name="robots" content="<?php echo $robots ?? 'index, follow'; ?>">
@@ -23,7 +22,7 @@
 
     <script
         defer
-        src="stats.js"
+        src="/stats.js"
         data-website-id="9a996427-0dea-49b7-98ee-9bda77af0960"
         data-host-url="https://cloud.umami.is"
     ></script>
@@ -45,11 +44,9 @@
                 </a>
 
                 <ul>
-                    <?php
-                        $current_page = basename($_SERVER['PHP_SELF'], '.php');
-                    ?>
-                    <li><a href="./" class="<?php echo ($current_page === 'index' || $current_page === '') ? 'active' : ''; ?>">Home</a></li>
-                    <li><a href="./projects.php" class="<?php echo ($current_page === 'projects') ? 'active' : ''; ?>">Projects</a></li>
+                    <li><a href="/" class="<?php echo ($uri === '/') ? 'active' : ''; ?>">Home</a></li>
+                    <li><a href="/articles" class="<?php echo (str_starts_with($uri, '/articles')) ? 'active' : ''; ?>">Articles</a></li>
+                    <li><a href="/projects" class="<?php echo ($uri === '/projects') ? 'active' : ''; ?>">Projects</a></li>
                 </ul>
             </nav>
         </div>

@@ -1,0 +1,13 @@
+{
+    "require": {
+        "league/commonmark": "^2.7",
+        "symfony/yaml": "^7.3",
+        "phiki/phiki": "^2.0"
+    },
+    "minimum-stability": "alpha",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

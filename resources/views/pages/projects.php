@@ -1,8 +1,7 @@
 <?php
-    $title = 'Projects | Dennis Koch | Freelance Full-Stack-Developer';
+    $title = 'Projects | Dennis Koch';
     $description = 'Explore my latest projects including Filament Studio, open source packages, and talks from the Laravel community.';
     $keywords = 'Projects, Filament Studio, Laravel packages, Open Source, Laravel Switzerland Meetup, PHP packages';
-    $canonical = 'https://denniskoch.dev/projects';
 
     $packages = [
         ['name' => 'Filament Activity Log', 'description' => 'Filament page for Spatie\'s activity log.', 'image' => './assets/images/packages/filament-activity-log.png', 'link' => 'https://github.com/pxlrbt/filament-activity-log', 'paid' => false],
@@ -18,7 +17,7 @@
     ];
 ?>
 
-<?php include 'header.php'; ?>
+<?php include __DIR__.'/../partials/header.php'; ?>
 
     <main>
         <div class="section wrapper projects">
@@ -41,7 +40,7 @@
 
                     <div class="project-hero__video">
                         <video controls muted autoplay>
-                            <source src="./assets/filament-studio.mp4" type="video/mp4">
+                            <source src="/assets/filament-studio.mp4" type="video/mp4">
                         </video>
                     </div>
                 </section>
@@ -126,4 +125,4 @@
             </div>
     </main>
 
-<?php include 'footer.php'; ?>
+<?php include __DIR__.'/../partials/footer.php'; ?>

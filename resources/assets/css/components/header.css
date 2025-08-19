@@ -20,6 +20,8 @@ header .logo {
 
 header nav {
     display: flex;
+    gap: calc(var(--spacing-y) * 0.5);
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
 }
