@@ -4,10 +4,14 @@
   "type": "module",
   "devDependencies": {
     "browser-sync": "^3.0.4",
-    "esbuild": "^0.25.9"
+    "esbuild": "^0.25.9",
+    "esbuild-manifest-plugin": "^0.2.0"
   },
   "scripts": {
     "dev": "node bin/dev.js",
     "build": "node bin/build.js"
+  },
+  "dependencies": {
+    "esbuild-plugin-clean": "^1.0.1"
   }
 }

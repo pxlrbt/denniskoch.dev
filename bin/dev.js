@@ -1,4 +1,5 @@
 import { context } from 'esbuild';
+import { clean } from 'esbuild-plugin-clean';
 import browserSync from 'browser-sync';
 import { watch } from 'chokidar';
 
@@ -31,21 +32,26 @@ async function startDevServer() {
 
     const ctx = await context({
       entryPoints: ['./resources/assets/css/_main.css'],
-      outfile: './public/dist/main.css',
+      outdir: './public/assets/dist',
       bundle: true,
       loader: {
         '.css': 'css'
       },
       external: ['/assets/fonts/*', '/assets/images/*'],
-      assetNames: '/assets/dist/[name]-[hash]',
-      publicPath: '/'
+      entryNames: '/[name]',
+      assetNames: '/[name]-[hash]',
+      publicPath: '/',
+      plugins: [
+        clean({
+          patterns: ['./public/assets/dist/*']
+        })
+      ]
     });
 
     await ctx.watch();
     console.log('Watching for CSS changes...');
 
-    // Watch the output CSS file and trigger injection
-    watch('./public/dist/main.css').on('change', () => {
+    watch('./public/assets/dist').on('change', () => {
       console.log('CSS file changed, injecting...');
       bs.reload('*.css');
     });
