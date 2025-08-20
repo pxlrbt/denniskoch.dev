@@ -23,7 +23,7 @@
     <link rel="preload" href="/assets/fonts/outfit-v11-latin-300.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/outfit-v11-latin-500.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link href="/assets/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?= asset_url('_main.css') ?>">
 
     <?php if($_SERVER['SERVER_NAME'] === 'denniskoch.dev.test'): ?>
         <!-- Browsersync script for development -->
@@ -41,6 +41,8 @@
 </head>
 
 <body>
+    <a href="#content" class="skip-link">Skip to content</a>
+
     <header>
         <div class="wrapper">
             <nav aria-label="Main Navigation">
@@ -58,3 +60,5 @@
             </nav>
         </div>
     </header>
+
+    <main id="content">

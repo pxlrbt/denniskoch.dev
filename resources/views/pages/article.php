@@ -15,24 +15,22 @@
 
 <?php include __DIR__.'/../partials/header.php'; ?>
 
-    <main>
-        <div class="section wrapper">
-            <article class="article-page text-wrap">
-                <time class="badge">
-                    <div class="sr-only">Date:</div>
+    <div class="section wrapper">
+        <article class="article-page text-wrap">
+            <time class="badge">
+                <div class="sr-only">Date:</div>
 
-                    <?php echo $article->date->format('Y-m-d'); ?>
-                </time>
-                <h1>
-                    <?php echo $article->title; ?>
-                </h1>
+                <?php echo $article->date->format('Y-m-d'); ?>
+            </time>
+            <h1>
+                <?php echo $article->title; ?>
+            </h1>
 
 
-                <div class="rte">
-                    <?php echo $article->content; ?>
-                </div>
-            </article>
-        </div>
-    </main>
+            <div class="rte">
+                <?php echo $article->content; ?>
+            </div>
+        </article>
+    </div>
 
 <?php include __DIR__.'/../partials/footer.php'; ?>

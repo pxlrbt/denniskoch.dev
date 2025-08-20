@@ -7,7 +7,6 @@
     include __DIR__.'/../partials/header.php';
 ?>
 
-<main>
     <article class="section wrapper text-wrap">
         <h1>Privacy Policy</h1>
         <p>The responsible party within the meaning of data protection laws, in particular the EU General Data
@@ -82,6 +81,5 @@
                 requirements or to implement changes to our services in the privacy policy, e.g., when introducing new
                 services. The new privacy policy will apply to your next visit.</p>
     </article>
-</main>
 
 <?php include __DIR__.'/../partials/footer.php'; ?>

@@ -9,31 +9,29 @@
 
 <?php include __DIR__ . '/../partials/header.php'; ?>
 
-    <main>
-        <div class="section wrapper text-wrap" style="text-align: center">
-            <h1>Page Not Found</h1>
+    <div class="section wrapper text-wrap" style="text-align: center">
+        <h1>Page Not Found</h1>
 
-            <p>
-                <img
-                    src="/assets/images/404.webp"
-                    alt="Gif of John Travolta looking around confused"
-                    style="margin-inline: auto"
-                >
-            </p>
+        <p>
+            <img
+                src="/assets/images/404.webp"
+                alt="Gif of John Travolta looking around confused"
+                style="margin-inline: auto"
+            >
+        </p>
 
-            <p>
-                <blockquote cite="https://www.w3.org/Provider/Style/URI.html">
-                    <em>"Cool URIs don't change."</em>
-                    <span>– Tim Berners-Lee</span>
-                </blockquote>
+        <p>
+            <blockquote cite="https://www.w3.org/Provider/Style/URI.html">
+                <em>"Cool URIs don't change."</em>
+                <span>– Tim Berners-Lee</span>
+            </blockquote>
 
-                But it seems I messed up, and now you are here.<br>
-                I apologize for that!
-            </p>
-            <p>
-                <a href="/" class="button">Back to home</a>
-            </p>
-        </div>
-    </main>
+            But it seems I messed up, and now you are here.<br>
+            I apologize for that!
+        </p>
+        <p>
+            <a href="/" class="button">Back to home</a>
+        </p>
+    </div>
 
 <?php include __DIR__.'/../partials/footer.php'; ?>

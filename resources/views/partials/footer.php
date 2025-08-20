@@ -1,3 +1,5 @@
+    </main>
+
     <footer class="footer">
         <div class="section wrapper footer__inner">
             <?php include __DIR__.'/../partials/social-icons.php'; ?>

@@ -5,26 +5,25 @@
 ?>
 
 <?php include __DIR__.'/../partials/header.php'; ?>
-    <main>
-        <div class="section wrapper text-wrap">
-            <h1>Articles</h1>
 
-            <div class="articles">
-                <?php foreach (\App\Article::all() as $article): ?>
-                    <article class="article">
-                        <time class="badge">
-                            <div class="sr-only">Date:</div>
+    <div class="section wrapper text-wrap">
+        <h1>Articles</h1>
 
-                            <?php echo $article->date->format('Y-m-d'); ?>
-                        </time>
+        <div class="articles">
+            <?php foreach (\App\Article::all() as $article): ?>
+                <article class="article">
+                    <time class="badge">
+                        <div class="sr-only">Date:</div>
 
-                        <a href="articles/<?php echo $article->slug; ?>" target="_blank">
-                            <?php echo $article->title; ?>
-                        </a>
-                    </article>
-                <?php endforeach; ?>
-            </div>
+                        <?php echo $article->date->format('Y-m-d'); ?>
+                    </time>
+
+                    <a href="articles/<?php echo $article->slug; ?>" target="_blank">
+                        <?php echo $article->title; ?>
+                    </a>
+                </article>
+            <?php endforeach; ?>
         </div>
-    </main>
+    </div>
 
 <?php include __DIR__.'/../partials/footer.php'; ?>

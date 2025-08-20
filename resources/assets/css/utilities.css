@@ -14,3 +14,31 @@
     max-width: var(--max-text-width);
     text-wrap: pretty;
 }
+
+.skip-link {
+    position: absolute;
+    top: calc(var(--spacing-y) * 0.5);
+    left: 0;
+    right: 0;
+
+    display: flex;
+    gap: .5rem;
+    margin-inline: auto;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 999;
+
+    max-width: fit-content;
+    border-radius: var(--rounding);
+    outline-offset: 2px;
+    padding: .5rem 1rem;
+    background-color: var(--color-peach-light);
+
+    font-size: var(--text-sm);
+    color: var(--color-blue-dark);
+
+    &:focus-visible {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
