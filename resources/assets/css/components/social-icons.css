@@ -4,7 +4,6 @@
     display: flex;
     width: 100%;
     gap: 1.5rem;
-    margin-top: 2rem;
     justify-content: center;
 
     a {
@@ -14,6 +13,10 @@
         &:hover {
             color: var(--color-peach);
         }
+    }
+
+    .tooltip {
+        color: var(--color-blue);
     }
 
     svg {

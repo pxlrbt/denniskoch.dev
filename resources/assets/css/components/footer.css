@@ -1,6 +1,15 @@
 .footer {
+    margin-top: auto;
     color: white;
     background-color: var(--color-blue-dark);
+
+    @media (width > 30rem) {
+        .footer__inner {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+        }
+    }
 
     a {
         text-decoration: none;
@@ -10,16 +19,26 @@
             color: var(--color-peach);
         }
     }
+
+    .social-icons {
+        margin-bottom: var(--spacing-y);
+
+        @media (width > 30rem) {
+            justify-content: start;
+        }
+    }
 }
 
 .footer__nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--spacing-x);
+    gap:var(--spacing-x);
     font-size: var(--text-sm);
 
-    @media (width > 40rem) {
-        gap: calc(var(--spacing-x) * 2);
+    @media (width > 30rem) {
+        flex: 1 0 auto;
+        flex-direction: column;
+        gap: calc(var(--spacing-y) * .5);
     }
 }

@@ -1,5 +1,7 @@
     <footer class="footer">
-        <div class="section wrapper">
+        <div class="section wrapper footer__inner">
+            <?php include __DIR__.'/../partials/social-icons.php'; ?>
+
             <nav class="footer__nav" aria-label="Footer">
 
                 <a href="/imprint">Legal Notice</a>
@@ -11,7 +13,13 @@
         </div>
     </footer>
 
-    <script defer src="/assets/components/tooltips/index.js"></script>
+    <script>
+        document.querySelectorAll('[data-tooltip]').forEach(el => {
+            const tooltip = el.getAttribute('data-tooltip');
+            el.style.setProperty('anchor-name', '--'+tooltip);
+            el.querySelector('[popover]').style.setProperty('position-anchor', '--'+tooltip);
+        });
+    </script>
 </body>
 
 </html>

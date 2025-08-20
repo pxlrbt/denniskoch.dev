@@ -3,6 +3,7 @@
 /** ABOUT */
 .about {
     position: relative;
+
     .about__inner {
         display: flex;
         flex-direction: column;
@@ -47,5 +48,9 @@
             transform: rotate(1deg);
             box-shadow: var(--shadow)
         }
+    }
+
+    .social-icons {
+        margin-top: 2rem;
     }
 }
