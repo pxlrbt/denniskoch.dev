@@ -1,6 +1,7 @@
 /node_modules
 /vendor
 /.idea
+/talks
 npm-debug.log
 /.babelrc
 /dist

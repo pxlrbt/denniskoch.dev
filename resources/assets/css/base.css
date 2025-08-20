@@ -1,3 +1,8 @@
+:root {
+    color-scheme: dark;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+}
 
 ::selection {
     background-color: var(--color-peach-light);
@@ -8,8 +13,8 @@
     outline-offset: 2px;
 }
 
-:root {
-    color-scheme: dark;
+@view-transition {
+    navigation: auto;
 }
 
 body {
