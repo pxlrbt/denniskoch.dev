@@ -5,16 +5,14 @@ async function buildCSS() {
     console.log('Building CSS with esbuild...');
     await build({
       entryPoints: ['./resources/assets/css/_main.css'],
-      outfile: './public/dist/main.css',
+      outfile: './public/assets/main.css',
       bundle: true,
       minify: true,
       loader: {
         '.css': 'css',
-        '.woff2': 'file',
-        '.woff': 'file',
-        '.ttf': 'file'
       },
-      assetNames: '/dist/assets/[name]-[hash]',
+      external: ['/assets/fonts/*', '/assets/images/*'],
+      assetNames: '/assets/dist/[name]-[hash]',
       publicPath: '/'
     });
     console.log('CSS build complete!');

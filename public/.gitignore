@@ -4,4 +4,4 @@
 /talks
 npm-debug.log
 /.babelrc
-/dist
+assets/main.css

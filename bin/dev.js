@@ -34,12 +34,10 @@ async function startDevServer() {
       outfile: './public/dist/main.css',
       bundle: true,
       loader: {
-        '.css': 'css',
-        '.woff2': 'file',
-        '.woff': 'file',
-        '.ttf': 'file'
+        '.css': 'css'
       },
-      assetNames: '/dist/assets/[name]-[hash]',
+      external: ['/assets/fonts/*', '/assets/images/*'],
+      assetNames: '/assets/dist/[name]-[hash]',
       publicPath: '/'
     });
 
