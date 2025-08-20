@@ -4,7 +4,6 @@
     $article = \App\Article::getBySlug($url[1]);
 
     if ($article === null) {
-        http_response_code(404);
         include __DIR__ . '/../pages/404.php';
         exit;
     }
