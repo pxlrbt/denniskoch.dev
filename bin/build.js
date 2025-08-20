@@ -14,7 +14,7 @@ async function buildCSS() {
         '.woff': 'file',
         '.ttf': 'file'
       },
-      assetNames: 'assets/[name]-[hash]',
+      assetNames: '/dist/assets/[name]-[hash]',
       publicPath: '/'
     });
     console.log('CSS build complete!');

@@ -39,7 +39,7 @@ async function startDevServer() {
         '.woff': 'file',
         '.ttf': 'file'
       },
-      assetNames: './assets/[name]-[hash]',
+      assetNames: '/dist/assets/[name]-[hash]',
       publicPath: '/'
     });
 
