@@ -17,20 +17,20 @@ Herd configures the directory where PHP looks for ini files via environment vari
 
 I quickly opened my Fish config and added the environment var for PHP 8.4:
 
-```bash
+```shell
 HERD_PHP_84_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/84/
 ```
 
 However, I had encountered this issue in the past, and I didn't want to debug this again in a year when PHP8.5 is released. So, I decided to fix it permanently:
 
-```bash
-set -x HERD_PHP_85_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/85/
-set -x HERD_PHP_86_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/86/
-set -x HERD_PHP_87_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/87/
-set -x HERD_PHP_88_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/88/
-set -x HERD_PHP_89_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/89/
-set -x HERD_PHP_90_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/90/
-set -x HERD_PHP_91_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/91/
+```shell
+set -x HERD_PHP_85_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/85/"
+set -x HERD_PHP_86_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/86/"
+set -x HERD_PHP_87_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/87/"
+set -x HERD_PHP_88_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/88/"
+set -x HERD_PHP_89_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/89/"
+set -x HERD_PHP_90_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/90/"
+set -x HERD_PHP_91_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/91/"
 ```
 
 That should give me some years of peace!
@@ -39,8 +39,8 @@ That should give me some years of peace!
 
 While that quick fix works, and I could even add more version to be safe for even longer, it feels dirty. Fortunately, you can use commands and loops inside the config file, so this will fix it forever (hopefully 🤞🏽)
 
-```bash
-for version_dir in "$HOME/Library/Application Support/Herd/config/php/*/"
+```shell
+for version_dir in "$HOME/Library/Application Support/Herd/config/php/"*/
     set php_version (basename $version_dir)
 
     if test $php_version != ""
@@ -53,6 +53,6 @@ end
 
 Apart from the Xdebug config, I want to use the same PHP configuration for every PHP version on my local machine. However, each configuration had different settings because I usually adjust only the ones I'm currently working with. I don't want to worry about different settings for various PHP versions in the future. To fix this, you can use multiple ini files and provide a second folder to scan for them, separated by a colon. Now, I have one general file and multiple version-specific files:
 
-```bash
+```shell
 set -x HERD_PHP_$php_version\_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/:$HOME/Library/Application Support/Herd/config/php/$php_version/"
 ```
