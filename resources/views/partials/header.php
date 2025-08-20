@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="me" href="https://phpc.social/@denniskoch">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale= 1.0">
 
@@ -40,7 +40,9 @@
         <div class="wrapper">
             <nav aria-label="Main Navigation">
                 <a href="/" class="logo">
-                    <em>Dennis Koch</em>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 86 56">
+                        <path fill="currentColor" d="M0 0v56h19.111c19.111 0 33.445-14 33.445-28S38.222 0 19.11 0H0Zm9.556 14v28h9.555c9.556 0 14.333-7 14.333-14s-4.777-14-14.333-14H9.556Zm43 14L66.889 0H86L71.667 28 86 56H66.889L52.556 28Z"/>
+                    </svg>
                 </a>
 
                 <ul>

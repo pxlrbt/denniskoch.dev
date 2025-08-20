@@ -9,13 +9,19 @@ header {
 }
 
 header .logo {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-x) * 0.5);
     font-family: var(--font-headline);
-    letter-spacing: -0.01em;
-    font-weight: bold;
 
-    span {
-        opacity: .4;
+    color: var(--color-peach);
+    font-weight: bold;
+    letter-spacing: -0.05em;
+
+    svg {
+        height: 1.5rem;
     }
+
 }
 
 header nav {
