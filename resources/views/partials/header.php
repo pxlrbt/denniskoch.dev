@@ -25,6 +25,52 @@
 
     <link rel="stylesheet" href="<?= asset_url('_main.css') ?>">
 
+    <!-- SEO: Me -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Dennis Koch",
+            "url": "https://denniskoch.dev",
+            "image": "https://denniskoch.dev/assets/images/dennis-koch.jpg",
+            "gender": "male",
+            "nationality": "German",
+            "description": "Freelance Full-Stack Developer specializing in Filament and Laravel for custom web applications.",
+            "jobTitle": "Full-Stack Developer",
+            "sameAs": [
+                "https://phpc.social/@denniskoch",
+                "https://github.com/pxlrbt",
+                "https://www.linkedin.com/in/dennis-koch-a764031bb/"
+            ],
+            "worksFor": {
+                "@type": "Organization",
+                "name": "pixelarbeit",
+                "url": "https://pixelarbeit.de"
+            },
+            "knowsLanguage": [
+                "German",
+                "English"
+            ],
+            "knowsAbout": [
+                "Laravel",
+                "FilamentPHP",
+                "PHP",
+                "JavaScript",
+                "MySQL",
+                "PostgreSQL",
+                "HTML",
+                "CSS",
+                "TailwindCSS"
+            ]
+        }
+    </script>
+
+    <?php
+        if (isset($head)) {
+            echo $head;
+        }
+    ?>
+
     <?php if($_SERVER['SERVER_NAME'] === 'denniskoch.dev.test'): ?>
         <!-- Browsersync script for development -->
         <script id="__bs_script__">

@@ -18,12 +18,28 @@ final class Article
     public function __construct(
         public string $slug,
         public string $title,
-        public DateTime $date,
+        public DateTime $created_at,
+        public DateTime $updated_at,
         public string $description,
+        public array $keywords,
         public string $content
     )
     {
     }
+
+    public function wordCount(): int
+    {
+        return str_word_count(strip_tags($this->content));
+    }
+
+    public function readingTimeInMinutes(): int
+    {
+        $wordsPerMinute = 200;
+
+        return (int) ceil($this->wordCount() / $wordsPerMinute);
+    }
+
+    // Static Methods
 
     public static function loadFile(string $filename): self
     {
@@ -45,8 +61,10 @@ final class Article
         return new Article(
             slug: str_replace('.md', '', basename($filename)),
             title: $frontMatter['title'] ?? '',
-            date: new DateTime($frontMatter['created_at']),
+            created_at: new DateTime($frontMatter['created_at']),
+            updated_at: new DateTime($frontMatter['updated_at']),
             description: $frontMatter['description'] ?? '',
+            keywords: $frontMatter['keywords'] ?? [],
             content: $data->getContent()
         );
     }

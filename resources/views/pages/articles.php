@@ -15,7 +15,7 @@
                     <time class="badge">
                         <div class="sr-only">Date:</div>
 
-                        <?php echo $article->date->format('Y-m-d'); ?>
+                        <?php echo $article->created_at->format('Y-m-d'); ?>
                     </time>
 
                     <a href="articles/<?php echo $article->slug; ?>" target="_blank">
