@@ -59,8 +59,8 @@ final class Article
         return new Article(
             slug: str_replace('.md', '', basename($filename)),
             title: $frontMatter['title'] ?? '',
-            created_at: new DateTime($frontMatter['created_at']),
-            updated_at: new DateTime($frontMatter['updated_at']),
+            created_at: DateTime::createFromTimestamp($frontMatter['created_at']),
+            updated_at: DateTime::createFromTimestamp($frontMatter['updated_at']),
             description: $frontMatter['description'] ?? '',
             tags: $frontMatter['tags'] ?? [],
             seo_keywords: $frontMatter['seo_keywords'] ?? [],

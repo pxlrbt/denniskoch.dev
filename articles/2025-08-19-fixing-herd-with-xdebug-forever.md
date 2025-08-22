@@ -3,8 +3,8 @@ title: Fixing Herd with Xdebug forever
 description: A short journey into debugging Xdebug issues with Laravel Herd and Fish shell
 tags: [ "Herd", "Xdebug" ]
 seo_keywords: [ "Herd", "Xdebug", "PHP", "macOS" ]
-created_at: 19.08.2025
-updated_at: 19.08.2025
+created_at: 2025-08-19
+updated_at: 2025-08-19
 ---
 
 ## My Xdebug Setup Broke &hellip; Again
