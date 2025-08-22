@@ -21,7 +21,8 @@ final class Article
         public DateTime $created_at,
         public DateTime $updated_at,
         public string $description,
-        public array $keywords,
+        public array $tags,
+        public array $seo_keywords,
         public string $content
     )
     {
@@ -52,10 +53,7 @@ final class Article
 
         $converter = new MarkdownConverter($environment);
 
-        $content = file_get_contents($filename);
-
-        $data = $converter->convert($content);
-
+        $data = $converter->convert(file_get_contents($filename));
         $frontMatter = $data->getFrontMatter();
 
         return new Article(
@@ -64,16 +62,10 @@ final class Article
             created_at: new DateTime($frontMatter['created_at']),
             updated_at: new DateTime($frontMatter['updated_at']),
             description: $frontMatter['description'] ?? '',
-            keywords: $frontMatter['keywords'] ?? [],
+            tags: $frontMatter['tags'] ?? [],
+            seo_keywords: $frontMatter['seo_keywords'] ?? [],
             content: $data->getContent()
         );
-    }
-
-    public static function all(): array
-    {
-        $articles = array_diff(scandir(self::ARTICLE_DIR), ['..', '.']);
-
-        return array_map(fn (string $file) => self::loadFile(self::ARTICLE_DIR . $file), $articles);
     }
 
     public static function getBySlug(string $slug): ?self
@@ -93,5 +85,12 @@ final class Article
         }
 
         return self::loadFile($file);
+    }
+
+    public static function all(): array
+    {
+        $articles = array_diff(scandir(self::ARTICLE_DIR), ['..', '.']);
+
+        return array_map(fn (string $file) => self::loadFile(self::ARTICLE_DIR . $file), $articles);
     }
 }

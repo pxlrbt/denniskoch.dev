@@ -10,9 +10,8 @@
 
     $title = $article->title . ' | Dennis Koch';
     $description = 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.';
-    $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
-
-    $seoKeywords = '["'. implode('", "', $article->keywords) . '"]';
+    $keywords = implode(', ', $article->seo_keywords);
+    $seoKeywords = '["'. implode('", "', $article->seo_keywords) . '"]';
 
     $head = <<<HTML
         <!-- SEO: Article -->
@@ -21,7 +20,6 @@
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
                 "headline": "{$article->title}",
-                "editor": "Dennis Koch",
                 "wordcount": "{$article->wordCount()}",
                 "timeRequired": "{$article->readingTimeInMinutes()} minutes",
                 "keywords": {$seoKeywords},
