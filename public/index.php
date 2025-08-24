@@ -34,6 +34,7 @@ match (true) {
     $uri === '/projects' => include VIEW_PATH . 'projects.php',
     $uri === '/imprint' => include VIEW_PATH . 'imprint.php',
     $uri === '/privacy' => include VIEW_PATH . 'privacy.php',
+    $uri === '/feed' => include VIEW_PATH . 'atom.php',
     str_starts_with($uri, '/articles/') => include VIEW_PATH . 'article.php',
     $uri === '/articles' => include VIEW_PATH . 'articles.php',
 

@@ -25,6 +25,9 @@
 
     <link rel="stylesheet" href="<?= asset_url('_main.css') ?>">
 
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Articles" href="/feed">
+
     <!-- SEO: Me -->
     <script type="application/ld+json">
         {

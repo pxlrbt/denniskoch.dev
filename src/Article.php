@@ -28,6 +28,11 @@ final class Article
     {
     }
 
+    public function url(): string
+    {
+        return 'https://denniskoch.dev/articles/' . $this->slug;
+    }
+
     public function wordCount(): int
     {
         return str_word_count(strip_tags($this->content));
@@ -59,8 +64,8 @@ final class Article
         return new Article(
             slug: str_replace('.md', '', basename($filename)),
             title: $frontMatter['title'] ?? '',
-            created_at: DateTime::createFromTimestamp($frontMatter['created_at']),
-            updated_at: DateTime::createFromTimestamp($frontMatter['updated_at']),
+            created_at: (new DateTime())->setTimestamp((int) $frontMatter['created_at']),
+            updated_at: (new DateTime())->setTimestamp((int) $frontMatter['updated_at']),
             description: $frontMatter['description'] ?? '',
             tags: $frontMatter['tags'] ?? [],
             seo_keywords: $frontMatter['seo_keywords'] ?? [],
