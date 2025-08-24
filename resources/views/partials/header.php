@@ -92,7 +92,7 @@
 <body>
     <a href="#content" class="skip-link">Skip to content</a>
 
-    <header>
+    <header class="header">
         <div class="wrapper">
             <nav aria-label="Main Navigation">
                 <a href="/" class="logo">

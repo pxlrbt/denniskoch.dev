@@ -1,5 +1,5 @@
 /* HEADER */
-header {
+.header {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -8,7 +8,7 @@ header {
     backdrop-filter: blur(20px);
 }
 
-header .logo {
+.header .logo {
     display: flex;
     align-items: center;
     gap: calc(var(--spacing-x) * 0.5);
@@ -24,7 +24,7 @@ header .logo {
 
 }
 
-header nav {
+.header nav {
     display: flex;
     gap: calc(var(--spacing-y) * 0.5);
     flex-wrap: wrap;
@@ -32,7 +32,7 @@ header nav {
     padding: 1rem 0;
 }
 
-header nav ul {
+.header nav ul {
     display: flex;
     gap: 1rem;
     justify-content: end;
@@ -43,19 +43,19 @@ header nav ul {
 }
 
 @media (min-width: 600px) {
-    header nav ul {
+    .header nav ul {
         justify-content: flex-start;
         max-width: var(--content-width);
         padding-inline: 1.5rem;
     }
 }
 
-header nav li {
+.header nav li {
     margin: 0;
     padding: 0%;
 }
 
-header nav li a {
+.header nav li a {
     font-family: var(--font-text);
     font-size: var(--text-xm);
     font-weight: 500;

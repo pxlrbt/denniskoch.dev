@@ -54,6 +54,11 @@ final class Article
             ->addExtension(new CommonMarkCoreExtension())
             ->addExtension(new StrikethroughExtension())
             ->addExtension(new FrontMatterExtension())
+            ->addRenderer(
+                \League\CommonMark\Extension\CommonMark\Node\Block\Heading::class,
+                new \App\Commonmark\HeadingRenderer(),
+                0
+            )
             ->addExtension(new PhikiExtension('github-dark'));
 
         $converter = new MarkdownConverter($environment);

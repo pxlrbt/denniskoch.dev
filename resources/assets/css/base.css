@@ -2,6 +2,7 @@
     color-scheme: dark;
     scrollbar-gutter: stable;
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
 }
 
 ::selection {
@@ -54,7 +55,9 @@ h2 {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    position: relative;
     margin-top: 2em;
+    vertical-align: baseline;
 
     &:first-of-type {
         margin-top: 0;
@@ -62,6 +65,29 @@ h1, h2, h3, h4, h5, h6 {
 
     :where(&) + & {
         margin-top: 1rem;
+    }
+
+    .anchor-link {
+        vertical-align: baseline;
+        text-decoration: none;
+
+        &::before {
+            display: inline-block;
+            margin-left: -1.25em;
+            margin-right: 0.5em;
+            content: '#';
+            font-size: 0.675em;
+            color: var(--color-peach-light);
+            opacity: .4;
+            text-decoration: none;
+            transition: opacity .4s;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
     }
 }
 
