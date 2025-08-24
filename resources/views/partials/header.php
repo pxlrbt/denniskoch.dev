@@ -10,15 +10,15 @@
     <meta name="description" content="<?php echo $description ?? 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.'; ?>">
     <meta name="keywords" content="<?php echo $keywords ?? 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions'; ?>">
 
-    <meta name="fediverse:creator" content="@denniskoch@phpc.social">
+    <meta property="og:image" content="<?= $ogImage ?? '/assets/images/og.png'; ?>">
 
+    <meta name="fediverse:creator" content="@denniskoch@phpc.social">
     <meta name="author" content="Dennis Koch">
     <meta name="robots" content="<?php echo $robots ?? 'index, follow'; ?>">
     <meta name="theme-color" content="rgba(25.021, 56.75, 72.545)">
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="me" href="https://phpc.social/@denniskoch">
-
     <link rel="preload" href="/assets/fonts/Satoshi-Black.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/outfit-v11-latin-300.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/outfit-v11-latin-500.woff2" as="font" type="font/woff2" crossorigin>

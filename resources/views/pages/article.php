@@ -13,6 +13,10 @@
     $keywords = implode(', ', $article->seo_keywords);
     $seoKeywords = '["'. implode('", "', $article->seo_keywords) . '"]';
 
+    if ($article->ogImageUrl()) {
+        $ogImage = $article->ogImageUrl();
+    }
+
     $head = <<<HTML
         <!-- SEO: Article -->
         <script type="application/ld+json">

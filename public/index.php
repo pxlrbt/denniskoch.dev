@@ -3,6 +3,8 @@
 error_reporting(E_ALL);
 require_once __DIR__ . '/../vendor/autoload.php';
 
+const PUBLIC_PATH = __DIR__ . '/';
+const ASSETS_PATH = __DIR__ . '/assets';
 const VIEW_PATH = __DIR__ . '/../resources/views/pages/';
 
 $uri = rtrim($_SERVER['REQUEST_URI'], '/') ?: '/';

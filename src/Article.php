@@ -38,6 +38,15 @@ final class Article
         return substr($this->slug, strlen('YYYY-MM-DD-'));
     }
 
+    public function ogImageUrl(): ?string
+    {
+        $path = ASSETS_PATH.'/images/articles/'.$this->slug.'.webp';
+
+        return file_exists($path)
+            ? '/assets/images/articles/'.$this->slug.'.webp'
+            : null;
+    }
+
     public function wordCount(): int
     {
         return str_word_count(strip_tags($this->content));
