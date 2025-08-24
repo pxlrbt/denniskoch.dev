@@ -32,7 +32,7 @@
     --shadow-hover: .4em .4em 0 var(--shadow-color);
 
     --content-width: 80rem;
-    --max-text-width: 70ch;
+    --max-text-width: 60ch;
 
     --focus-outline-color: currentColor;
     --focus-outline-offset: 0.2rem;
