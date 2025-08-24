@@ -10,7 +10,7 @@
     <meta name="description" content="<?php echo $description ?? 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.'; ?>">
     <meta name="keywords" content="<?php echo $keywords ?? 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions'; ?>">
 
-    <meta property="og:image" content="<?= $ogImage ?? '/assets/images/og.png'; ?>">
+    <meta property="og:image" content="<?= $ogImage ?? '/assets/images/og.webp'; ?>">
 
     <meta name="fediverse:creator" content="@denniskoch@phpc.social">
     <meta name="author" content="Dennis Koch">
