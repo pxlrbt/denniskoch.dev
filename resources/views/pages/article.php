@@ -9,7 +9,7 @@
     }
 
     $title = $article->title . ' | Dennis Koch';
-    $description = 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.';
+    $description = $article->created_at->format('d.m.Y') .' – '.$article->description;
     $keywords = implode(', ', $article->seo_keywords);
     $seoKeywords = '["'. implode('", "', $article->seo_keywords) . '"]';
 
