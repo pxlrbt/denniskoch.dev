@@ -10,8 +10,5 @@
   "scripts": {
     "dev": "node bin/dev.js",
     "build": "node bin/build.js"
-  },
-  "dependencies": {
-    "esbuild-plugin-clean": "^1.0.1"
   }
 }

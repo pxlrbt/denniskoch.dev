@@ -8,27 +8,6 @@ const VIEW_PATH = __DIR__ . '/../resources/views/pages/';
 $uri = rtrim($_SERVER['REQUEST_URI'], '/') ?: '/';
 
 
-function asset_url(string $file): string
-{
-    $publicFolder = __DIR__ . '/';
-
-    $files = glob($publicFolder . '/assets/dist/*');
-    $files = array_map(
-        fn (string $filename) => str_replace($publicFolder, '', $filename),
-        $files
-    );
-
-    $pattern = '/\/assets\/dist\/' . preg_quote(pathinfo($file, PATHINFO_FILENAME), '/') . '[\-\d\w]*\.'. preg_quote(pathinfo($file, PATHINFO_EXTENSION), '/') .'/';
-
-    foreach ($files as $file) {
-        if (preg_match($pattern, $file)) {
-            return $file;
-        }
-    }
-
-    throw new Exception('No assets for ' . $file . ' found');
-}
-
 match (true) {
     $uri === '/' => include VIEW_PATH . 'home.php',
     $uri === '/projects' => include VIEW_PATH . 'projects.php',

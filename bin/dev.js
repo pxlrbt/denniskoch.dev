@@ -1,5 +1,4 @@
 import { context } from 'esbuild';
-import { clean } from 'esbuild-plugin-clean';
 import browserSync from 'browser-sync';
 import { watch } from 'chokidar';
 
@@ -32,20 +31,14 @@ async function startDevServer() {
 
     const ctx = await context({
       entryPoints: ['./resources/assets/css/_main.css'],
-      outdir: './public/assets/dist',
+      outfile: './public/assets/main.css',
       bundle: true,
       loader: {
         '.css': 'css'
       },
       external: ['/assets/fonts/*', '/assets/images/*'],
-      entryNames: '/[name]',
       assetNames: '/[name]-[hash]',
       publicPath: '/',
-      plugins: [
-        clean({
-          patterns: ['./public/assets/dist/*']
-        })
-      ]
     });
 
     await ctx.watch();

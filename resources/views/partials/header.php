@@ -23,7 +23,7 @@
     <link rel="preload" href="/assets/fonts/outfit-v11-latin-300.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/outfit-v11-latin-500.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="stylesheet" href="<?= asset_url('_main.css') ?>">
+    <link rel="stylesheet" href="/assets/main.css?v=<?= filemtime(__DIR__.'/../../../public/assets/main.css') ?>">
 
     <!-- RSS -->
     <link rel="alternate" type="application/atom+xml" title="Articles" href="/feed">
