@@ -38,7 +38,8 @@
             </div>
 
             <div class="project-hero__video">
-                <video controls muted autoplay>
+                <video width="1728" height="1080" controls muted autoplay>
+                    <source src="/assets/filament-studio-avif.mp4" type="video/av01">
                     <source src="/assets/filament-studio.mp4" type="video/mp4">
                 </video>
             </div>
