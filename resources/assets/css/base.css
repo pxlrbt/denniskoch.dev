@@ -110,6 +110,9 @@ em {
 }
 
 iframe, video {
+    --focus-outline-color: var(--color-peach);
+    --focus-outline-offset: 4px;
+
     box-shadow: var(--shadow);
     border-radius: var(--rounding);
 }

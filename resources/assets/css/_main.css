@@ -9,7 +9,6 @@
 @import 'components/badges.css' layer(component);
 @import '../components/tooltips/index.css' layer(component);
 
-
 @import 'components/header.css' layer(component);
 @import 'components/footer.css' layer(component);
 @import 'components/about.css' layer(component);

@@ -1,5 +1,3 @@
-
-
 .social-icons {
     display: flex;
     width: 100%;
@@ -10,7 +8,8 @@
         text-decoration: none;
         transition: color .4s;
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             color: var(--color-peach);
         }
     }

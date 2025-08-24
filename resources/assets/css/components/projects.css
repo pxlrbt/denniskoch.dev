@@ -121,6 +121,12 @@
     border-radius: var(--rounding);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
 }
 
 @media (min-width: 760px) {
@@ -130,16 +136,9 @@
     }
 }
 
-.talk-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
 .talk-card__thumbnail {
     position: relative;
-
     overflow: hidden;
-    cursor: pointer;
 }
 
 .talk-card__thumbnail img {
@@ -150,9 +149,6 @@
     transition: transform 0.3s ease;
 }
 
-.talk-card__thumbnail:hover img {
-    transform: scale(1.05);
-}
 .talk-card__content {
     padding: 2rem;
 }

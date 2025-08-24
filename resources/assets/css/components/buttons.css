@@ -33,7 +33,8 @@
         align-items: center;
         box-shadow: .2em 0.2em 0 var(--shadow-color);
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             --shadow: var(--shadow-hover);
             box-shadow: var(--shadow-hover);
             --bg-color: oklch(from var(--color-github-sponsors) calc(l - 0.1) c h);
@@ -51,9 +52,11 @@
     background: transparent;
     border-color: var(--color-peach);
     color: var(--color-peach);
+
+    &:hover,
+    &:focus-visible {
+        background: var(--color-peach);
+        color: white;
+    }
 }
 
-.button--secondary:hover {
-    background: var(--color-peach);
-    color: white;
-}
