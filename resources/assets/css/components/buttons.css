@@ -1,5 +1,7 @@
 
 .button {
+    --focus-outline-offset: -4px;
+    --focus-outline-color: var(--color-blue-dark);
     --bg-color: var(--color-blue);
     padding: 0.5rem 1.25rem;
 
@@ -15,15 +17,11 @@
 
     transition: background 0.3s ease, box-shadow 0.3s ease;
 
-    &:hover {
-        color: white;
+    &:hover,
+    &:focus-visible {
+        color: var(--color-blue);
         --shadow: var(--shadow-hover);
         --bg-color: var(--color-peach);
-    }
-
-    &:focus-visible {
-        outline: 2px solid var(--color-peach);
-        outline-offset: 2px;
     }
 
     &.-sponsors {

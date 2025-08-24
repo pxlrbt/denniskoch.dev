@@ -16,6 +16,7 @@
 }
 
 .skip-link {
+    --color: var(--color-peach);
     position: absolute;
     top: calc(var(--spacing-y) * 0.5);
     left: 0;
@@ -29,16 +30,19 @@
     z-index: 999;
 
     max-width: fit-content;
-    border-radius: var(--rounding);
+    border-radius: 0.5rem;
     outline-offset: 2px;
-    padding: .5rem 1rem;
-    background-color: var(--color-peach-light);
+    padding: .25rem 0.75rem;
+    background-color: var(--color);
 
     font-size: var(--text-sm);
+    font-weight: 500;
     color: var(--color-blue-dark);
 
     &:focus-visible {
         opacity: 1;
         pointer-events: all;
+        outline: 2px solid var(--color-blue-dark);
+        box-shadow: 0 0 0 6px var(--color);
     }
 }

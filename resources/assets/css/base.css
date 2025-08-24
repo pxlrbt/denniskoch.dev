@@ -7,11 +7,14 @@
 
 ::selection {
     background-color: var(--color-peach-light);
+    color: var(--color-blue);
 }
 
 *:focus-visible {
-    outline: 2px solid var(--color-peach);
-    outline-offset: 2px;
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+    outline-style: var(--focus-outline-style);
+    outline-width: var(--focus-outline-width);
 }
 
 @view-transition {
@@ -27,6 +30,10 @@ body {
     overflow-x: hidden;
 
     color: var(--color-text);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
 }
 
 h1 {
@@ -42,6 +49,7 @@ h1 {
     &::selection,
     ::selection {
         background-color: var(--color-blue);
+        color: currentColor;
     }
 }
 
@@ -68,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .anchor-link {
+        display: inline-block;
         vertical-align: baseline;
         text-decoration: none;
 
@@ -83,7 +92,8 @@ h1, h2, h3, h4, h5, h6 {
             transition: opacity .4s;
         }
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             &::before {
                 opacity: 1;
             }
@@ -91,6 +101,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+a {
+    border-radius: var(--rounding);
+}
 em {
     font-style: normal;
     color: var(--color-peach-light)
@@ -112,7 +125,8 @@ main a {
     text-underline-offset: 0.15em;
     transition: color .4s;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         color: var(--color-peach-light);
     }
 }

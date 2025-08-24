@@ -34,6 +34,11 @@
     --content-width: 80rem;
     --max-text-width: 70ch;
 
+    --focus-outline-color: currentColor;
+    --focus-outline-offset: 0.2rem;
+    --focus-outline-style: solid;
+    --focus-outline-width: 2px;
+
 
     @media (min-width: 30rem) {
         --text-xs: 1rem;

@@ -1,7 +1,5 @@
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100svh;
+.container {
+    container-type: inline-size;
 }
 
 .wrapper {

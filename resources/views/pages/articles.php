@@ -25,7 +25,10 @@
                         <?php echo $article->created_at->format('Y-m-d'); ?>
                     </time>
 
-                    <a href="articles/<?php echo $article->slug; ?>" target="_blank">
+                    <a
+                        href="articles/<?php echo $article->slug; ?>"
+                        style="view-transition-name: <?= $article->viewTransitionName(); ?>"
+                    >
                         <?php echo $article->title; ?>
                     </a>
                 </article>

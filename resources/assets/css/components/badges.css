@@ -14,4 +14,9 @@
     border-radius: var(--rounding);
     padding: 0.05em 0.375em;
     font-size: 0.875rem;
+
+    &::selection {
+        background-color: var(--color-blue);
+        color: currentColor;
+    }
 }

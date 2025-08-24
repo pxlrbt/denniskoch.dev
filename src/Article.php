@@ -33,6 +33,11 @@ final class Article
         return 'https://denniskoch.dev/articles/' . $this->slug;
     }
 
+    public function viewTransitionName(): string
+    {
+        return substr($this->slug, strlen('YYYY-MM-DD-'));
+    }
+
     public function wordCount(): int
     {
         return str_word_count(strip_tags($this->content));
@@ -97,6 +102,9 @@ final class Article
         return self::loadFile($file);
     }
 
+    /**
+     * @return array<self>
+     */
     public static function all(): array
     {
         $articles = array_diff(scandir(self::ARTICLE_DIR), ['..', '.']);
