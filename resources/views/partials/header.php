@@ -35,7 +35,7 @@
             "@type": "Person",
             "name": "Dennis Koch",
             "url": "https://denniskoch.dev",
-            "image": "https://denniskoch.dev/assets/images/dennis-koch.jpg",
+            "image": "https://denniskoch.dev/assets/images/dennis-koch.webp",
             "gender": "male",
             "nationality": "German",
             "description": "Freelance Full-Stack Developer specializing in Filament and Laravel for custom web applications.",

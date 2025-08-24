@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="about__image">
-                <img src="./assets/images/dennis-koch.jpg" alt="">
+                <img src="./assets/images/dennis-koch.webp" alt="">
 
                 <?php include __DIR__.'/../partials/social-icons.php'; ?>
             </div>
