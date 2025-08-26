@@ -4,7 +4,7 @@ description: A short journey into debugging Xdebug issues with Laravel Herd and 
 tags: [ "Herd", "Xdebug" ]
 seo_keywords: [ "Herd", "Xdebug", "PHP", "macOS" ]
 created_at: 2025-08-19
-updated_at: 2025-08-19
+updated_at: 2025-08-26
 ---
 
 ## My Xdebug Setup Broke &hellip; Again
@@ -53,10 +53,6 @@ for version_dir in "$HOME/Library/Application Support/Herd/config/php/"*/
 end
 ```
 
-## Bonus
+## Changelog
 
-Apart from the Xdebug config, I want to use the same PHP configuration for every PHP version on my local machine. However, each configuration had different settings because I usually adjust only the ones I'm currently working with. I don't want to worry about different settings for various PHP versions in the future. To fix this, you can use multiple ini files and provide a second folder to scan for them, separated by a colon. Now, I have one general file and multiple version-specific files:
-
-```shell
-set -x HERD_PHP_$php_version\_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/:$HOME/Library/Application Support/Herd/config/php/$php_version/"
-```
+26.08.2025: Removed the "Bonus" section because it only worked with Herd CLI, but not through FPM.
