@@ -34,23 +34,6 @@
     gap: var(--spacing-x) var(--spacing-y);
 }
 
-.packages__intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 1rem;
-    margin-bottom: var(--spacing-y);
-
-    @media (width > 60rem) {
-        flex-direction: row;
-    }
-
-    p {
-        text-wrap: pretty;
-    }
-}
-
 .package-card {
     display: flex;
     flex-direction: column;

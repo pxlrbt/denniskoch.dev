@@ -7,9 +7,7 @@
     .about__inner {
         display: flex;
         flex-direction: column;
-        gap: 4rem;
-        margin-block: 4rem;
-        max-width: 60rem;
+        gap: 8rem;
 
         @media (width > 56rem) {
             flex-direction: row;
@@ -24,9 +22,10 @@
     }
 
     .about__image {
-        flex: 0 0 14rem;
+        flex: 0 0 16rem;
         display: flex;
         flex-direction: column;
+        margin-left: auto;
 
         align-items: start;
 

@@ -1,20 +1,10 @@
 <?php
-    $title = 'Projects | Dennis Koch';
+
+use App\Project;
+
+$title = 'Projects | Dennis Koch';
     $description = 'Explore my latest projects including Filament Studio, open source packages, and talks from the Laravel community.';
     $keywords = 'Projects, Filament Studio, Laravel packages, Open Source, Laravel Switzerland Meetup, PHP packages';
-
-    $packages = [
-        ['name' => 'Filament Activity Log', 'description' => 'Filament page for Spatie\'s activity log.', 'image' => './assets/images/packages/filament-activity-log.webp', 'link' => 'https://github.com/pxlrbt/filament-activity-log', 'paid' => false],
-        ['name' => 'Filament Changelog', 'description' => 'Display your GitHub releases in your Filament panel.', 'image' => './assets/images/packages/filament-changelog.webp', 'link' => 'https://filament.pxlrbt.de/changelog/', 'paid' => true],
-        ['name' => 'Filament Environment Indicator', 'description' => 'Never confuse your Filament environments again.', 'image' => './assets/images/packages/filament-environment-indicator.webp', 'link' => 'https://github.com/pxlrbt/filament-environment-indicator', 'paid' => false],
-        ['name' => 'Filament Excel', 'description' => 'Easily configure your Excel exports in Filament..', 'image' => './assets/images/packages/filament-excel.webp', 'link' => 'https://github.com/pxlrbt/filament-excel', 'paid' => false],
-        ['name' => 'Filament Spotlight', 'description' => 'Quickly navigate your Filament Resources.', 'image' => './assets/images/packages/filament-spotlight.webp', 'link' => 'https://github.com/pxlrbt/filament-spotlight', 'paid' => false],
-        ['name' => 'Filament Spotlight Pro', 'description' => 'Browse your Filament Panel with ease.', 'image' => './assets/images/packages/filament-spotlight-pro.webp', 'link' => 'https://filament.pxlrbt.de/spotlight-pro', 'paid' => true],
-        ['name' => 'Filament Translate Action', 'description' => 'Translate your models with a single click via DeepL.', 'image' => './assets/images/packages/filament-translate-action.webp', 'link' => 'https://github.com/pxlrbt/filament-translate-action', 'paid' => false],
-
-        ['name' => 'Laravel Database State', 'description' => 'Seeders – but for production data.', 'image' => './assets/images/packages/laravel-database-state.webp', 'link' => 'https://github.com/pxlrbt/laravel-database-state', 'paid' => false],
-        ['name' => 'Laravel Pdfable', 'description' => 'Keep the logic for your PDFs in one place like you do with Laravel\'s Mailables.', 'image' => './assets/images/packages/laravel-pdfable.webp', 'link' => 'https://github.com/pxlrbt/laravel-pdfable', 'paid' => false],
-    ];
 ?>
 
 <?php include __DIR__.'/../partials/header.php'; ?>
@@ -49,7 +39,7 @@
         <section class="section" id="packages">
             <h2>Filament & Laravel Packages</h2>
 
-            <div class="packages__intro">
+            <div class="intro">
                 <div>
                     <p class="text-wrap">
                         A collection of Laravel and Filament packages I've built to help developers create better applications.
@@ -67,23 +57,23 @@
             </div>
 
             <div class="packages-grid">
-                    <?php foreach ($packages as $package): ?>
+                    <?php foreach (Project::all() as $package): ?>
                     <div class="package-card">
                         <div class="package-card__image">
-                            <img src="<?php echo $package['image']; ?>" alt="<?php echo $package['name']; ?>" loading="lazy">
+                            <img src="<?php echo $package->image; ?>" alt="<?php echo $package->name; ?>" loading="lazy">
                         </div>
 
                         <div class="package-card__content">
                             <h3>
-                                <?php echo $package['name']; ?>
-                                <?php if ($package['paid']): ?>
+                                <?php echo $package->name; ?>
+                                <?php if ($package->paid): ?>
                                     <span class="badge badge--paid">Paid</span>
                                 <?php endif; ?>
                             </h3>
-                            <p><?php echo $package['description']; ?></p>
+                            <p><?php echo $package->description; ?></p>
 
                             <div class="package-card__actions">
-                                <a href="<?php echo $package['link']; ?>" class="button">View Package</a>
+                                <a href="<?php echo $package->link; ?>" class="button">View Package</a>
                             </div>
                         </div>
                     </div>

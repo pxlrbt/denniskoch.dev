@@ -2,6 +2,7 @@
     --font-headline: 'Satoshi', sans-serif;
     --font-text: 'Outfit', sans-serif;
 
+    --rem: 1.1rem;
     --text-xs: 0.9rem;
     --text-sm: 1.0rem;
     --text-normal: 1.1rem;
@@ -22,6 +23,8 @@
     --color-peach-bg: rgba(from var(--color-peach) r g b / .1);
 
     --color-github-sponsors: rgba(219.02, 96.736, 162.41);
+
+    --spacing-section: 4rem;
 
     --spacing-x: 1.5em;
     --spacing-y: 1.5rem;
@@ -46,5 +49,13 @@
         --text-normal: 1.25rem;
         --text-lg: 2.2rem;
         --text-xl: 2.6rem;
+    }
+
+    @media (min-width: 47.5rem) {
+        --spacing-section: 6rem;
+    }
+
+    @media (min-width: 75rem) {
+        --spacing-section: 8rem;
     }
 }

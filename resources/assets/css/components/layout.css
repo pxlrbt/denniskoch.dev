@@ -13,14 +13,36 @@
     }
 }
 
-.section {
-    padding-block: 4rem;
+.full-bleed {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw)
+}
 
-    @media (min-width: 760px) {
-        padding-block: 6rem;
+.section {
+    padding-block: var(--spacing-section);
+
+    & + & {
+        padding-top: 0;
+    }
+}
+
+.intro {
+    p {
+        text-wrap: pretty;
+        margin-bottom: 0;
     }
 
-    @media (min-width: 1200px) {
-        padding-block: 8rem;
+    &:has(.button) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 1rem;
+        margin-bottom: var(--spacing-y);
+
+        @media (width > 60rem) {
+            flex-direction: row;
+        }
     }
 }

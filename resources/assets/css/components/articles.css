@@ -1,51 +1,64 @@
-.articles-intro {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-between;
-    gap: var(--spacing-y);
-
-    .button {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: calc(var(--spacing-x) / 2);
-
-        svg {
-            display: inline-block;
-        }
-    }
-}
-
 .articles {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-y);
-}
 
-.article {
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc(var(--spacing-x) * 0.5) var(--spacing-x);
-    align-items: center;
-    max-width: var(--max-text-width);
+    .articles__intro {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: space-between;
+        gap: var(--spacing-y);
 
-    time {
-        white-space: nowrap;
+        .button {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: calc(var(--spacing-x) / 2);
+
+            svg {
+                display: inline-block;
+            }
+        }
     }
 
-    h2 {
-        padding: 0;
-        margin: 0;
-        font-size: 1rem;
+    .articles__list {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--spacing-y) * 2);
+    }
 
-        & > a {
-            text-decoration: none;
+    .article {
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc(var(--spacing-y) * 0.25) var(--spacing-x);
+        align-items: center;
+        max-width: var(--max-text-width);
+
+        text-decoration: none;
+
+        .article__meta {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: var(--text-sm);
+            gap: calc(var(--spacing-x) * 0.5) var(--spacing-x);
+            opacity: .8;
+
+            & > div {
+                display: flex;
+                align-items: center;
+                gap: calc(var(--spacing-x) / 4);
+
+                svg {
+                    width: 1em;
+                    height: 1em;
+                }
+            }
         }
     }
 }
 
-.article-page {
+.article-page .article {
     max-width: var(--max-text-width);
     margin: 0 auto;
 
@@ -54,7 +67,7 @@
         margin-bottom: 0.5rem;
     }
 
-    .article-header {
+    .article__header {
         margin-bottom: calc(var(--spacing-y) * 1.5);
 
         h1 {
@@ -62,7 +75,7 @@
         }
     }
 
-    .article-meta {
+    .article__meta {
         display: flex;
         flex-wrap: wrap;
         font-size: var(--text-sm);

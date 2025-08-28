@@ -12,6 +12,7 @@
     $description = $article->created_at->format('d.m.Y') .' – '.$article->description;
     $keywords = implode(', ', $article->seo_keywords);
     $seoKeywords = '["'. implode('", "', $article->seo_keywords) . '"]';
+    $rootClass = "article-page";
 
     if ($article->ogImageUrl()) {
         $ogImage = $article->ogImageUrl();
@@ -44,14 +45,13 @@
 <?php include __DIR__.'/../partials/header.php'; ?>
 
     <div class="section wrapper">
-        <article class="article-page text-wrap">
-
-            <header class="article-header">
+        <article class="article text-wrap">
+            <header class="article__header">
                 <h1 style="view-transition-name: <?= $article->viewTransitionName(); ?>">
                     <?php echo $article->title; ?>
                 </h1>
 
-                <div class="article-meta">
+                <div class="article__meta">
                     <div class="date">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
                         <?php echo $article->created_at->format('d.m.Y'); ?>

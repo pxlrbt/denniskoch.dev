@@ -1,0 +1,11 @@
+.partners {
+    display: grid;
+    padding-block: var(--spacing-y);
+    grid-template-columns: repeat(1, 1fr);
+    gap: calc(var(--spacing-y) * 0.5) var(--spacing-x);
+    font-size: var(--text-lg);
+
+    a {
+        text-decoration: none;
+    }
+}

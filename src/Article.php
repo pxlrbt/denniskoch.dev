@@ -120,4 +120,14 @@ final class Article
 
         return array_map(fn (string $file) => self::loadFile(self::ARTICLE_DIR . $file), $articles);
     }
+
+    /**
+     * @return array<self>
+     */
+    public static function get(int $offset = 0, int $limit = 10): array
+    {
+        $articles = array_slice(array_diff(scandir(self::ARTICLE_DIR), ['..', '.']), $offset, $limit);
+
+        return array_map(fn (string $file) => self::loadFile(self::ARTICLE_DIR . $file), $articles);
+    }
 }

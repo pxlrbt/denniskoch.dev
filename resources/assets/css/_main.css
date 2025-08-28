@@ -14,7 +14,9 @@
 @import 'components/about.css' layer(component);
 @import 'components/social-icons.css' layer(component);
 @import 'components/projects.css' layer(component);
+@import 'components/projects-grid.css' layer(component);
 @import 'components/articles.css' layer(component);
+@import 'components/partners.css' layer(component);
 
 @import 'components/rte.css' layer(utilities);
 @import 'components/layout.css' layer(utilities);
