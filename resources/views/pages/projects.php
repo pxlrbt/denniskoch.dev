@@ -1,8 +1,8 @@
 <?php
 
-use App\Project;
+    use App\Project;
 
-$title = 'Projects | Dennis Koch';
+    $title = 'Projects | Dennis Koch';
     $description = 'Explore my latest projects including Filament Studio, open source packages, and talks from the Laravel community.';
     $keywords = 'Projects, Filament Studio, Laravel packages, Open Source, Laravel Switzerland Meetup, PHP packages';
 ?>
@@ -73,7 +73,13 @@ $title = 'Projects | Dennis Koch';
                             <p><?php echo $package->description; ?></p>
 
                             <div class="package-card__actions">
-                                <a href="<?php echo $package->link; ?>" class="button">View Package</a>
+                                <?php if ($package->docs_url): ?>
+                                    <a href="<?php echo $package->link; ?>" class="button">Docs</a>
+                                <?php endif; ?>
+
+                                <a href="<?php echo $package->link; ?>" class="button">
+                                    <?= $package->paid ? 'Buy' : 'View Package' ?>
+                                </a>
                             </div>
                         </div>
                     </div>
