@@ -25,11 +25,11 @@
         flex: 0 0 16rem;
         display: flex;
         flex-direction: column;
-        margin-left: auto;
 
         align-items: start;
 
         @media (width > 56rem) {
+            margin-left: auto;
             transform: translateY(-4rem);
         }
 

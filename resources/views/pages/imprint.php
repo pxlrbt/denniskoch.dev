@@ -7,21 +7,23 @@
 
 <?php include __DIR__.'/../partials/header.php'; ?>
 
-    <article class="section wrapper text-wrap">
-        <h1>Legal Notice</h1>
-        <p>
-            <strong>Postal Address:</strong><br>
-            Gundelfinger Str., 47<br>
-            79108 Freiburg im Breisgau
-        </p>
-        <p>
-            <strong>Contact:</strong><br>
-            Email: &#104;e&#121;&#64;d&#101;nnisko&#99;&#104;&#46;&#100;&#101;&#118;
-        </p>
-        <p>
-            <strong>Represented by:</strong><br>
-            Dennis Koch
-        </p>
+    <article class="section wrapper">
+        <div class="text-wrap">
+            <h1>Legal Notice</h1>
+            <p>
+                <strong>Postal Address:</strong><br>
+                Gundelfinger Str., 47<br>
+                79108 Freiburg im Breisgau
+            </p>
+            <p>
+                <strong>Contact:</strong><br>
+                Email: &#104;e&#121;&#64;d&#101;nnisko&#99;&#104;&#46;&#100;&#101;&#118;
+            </p>
+            <p>
+                <strong>Represented by:</strong><br>
+                Dennis Koch
+            </p>
+        </div>
     </article>
 
 <?php include __DIR__.'/../partials/footer.php'; ?>
