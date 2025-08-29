@@ -20,7 +20,7 @@
     <meta name="robots" content="<?php echo $robots ?? 'index, follow'; ?>">
     <meta name="theme-color" content="rgba(25.021, 56.75, 72.545)">
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://denniskoch.dev/favicon.svg" />
     <link rel="me" href="https://phpc.social/@denniskoch">
     <link rel="preload" href="/assets/fonts/Satoshi-Black.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/outfit-v11-latin-300.woff2" as="font" type="font/woff2" crossorigin>
