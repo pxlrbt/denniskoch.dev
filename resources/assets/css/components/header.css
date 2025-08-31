@@ -21,14 +21,30 @@
     svg {
         height: 1.5rem;
     }
+
+    .logo-full {
+        display: none;
+    }
+
+    @media (width > 36.25rem) {
+        .logo-icon {
+            display: none;
+        }
+
+        .logo-full {
+            display: block;
+        }
+    }
 }
 
 .header nav {
     display: flex;
-    gap: calc(var(--spacing-y) * 0.5);
+    row-gap: var(--spacing-y);
+    column-gap: var(--spacing-x);
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
+    width: 100%;
 }
 
 .header nav ul {
@@ -39,6 +55,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: auto;
 }
 
 @media (min-width: 600px) {
