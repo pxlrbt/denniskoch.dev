@@ -40,7 +40,7 @@ final class Article
 
     public function ogImageUrl(): ?string
     {
-        $path = ASSETS_PATH.'/images/articles/'.$this->slug.'.webp';
+        $path = ASSETS_PATH.'/images/articles/'.$this->slug.'/og.webp';
 
         return file_exists($path)
             ? '/assets/images/articles/'.$this->slug.'.webp'

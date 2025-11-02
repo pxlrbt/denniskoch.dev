@@ -1,5 +1,5 @@
 ---
-title: Automatic autocompletion for make()
+title: Automatic Autocompletion For make()
 description: How Laravel Idea can help you reduce repetition
 tags: [ "Laravel", "PhpStorm" ]
 seo_keywords: [ "Laravel", "PhpStorm", "Laravel Idea", "IDE" ]
@@ -13,7 +13,7 @@ The `make()` method is a common pattern in the Laravel ecosystem. Some might arg
 
 You could place the `make()` method in a trait and apply it to all your classes while passing the arguments along. However, this approach would result in the loss of autocompletion.
 
-![Screenshot demonstrating missing autocompletion in PhpStorm](/content/2025-11-02-laravel-idea-make/missing-autocompletion.png)
+![Screenshot demonstrating missing autocompletion in PhpStorm](/assets/images/articles/2025-11-02-laravel-idea-make/missing-autocompletion.png)
 
 ```php
 <?php
@@ -86,7 +86,7 @@ To implement this, create the `ide.json` file in your project root, add the foll
 
 The `baseFqn` also accepts parent classes or traits, allowing you to reuse this across your codebase. When using a trait, PhpStorm will display two definitions, however.
 
-![Screenshot demonstrating double autocompletion in PhpStorm](/content/2025-11-02-laravel-idea-make/double-autocompletion.png)
+![Screenshot demonstrating double autocompletion in PhpStorm](/assets/images/articles/2025-11-02-laravel-idea-make/double-autocompletion.png)
 
 ```php
 <?php
