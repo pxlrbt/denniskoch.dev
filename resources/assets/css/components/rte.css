@@ -1,5 +1,7 @@
 .rte {
     img {
-        width: 100%;
+        width: auto;
+        margin-inline: auto;
+        max-width: 100%;
     }
 }
