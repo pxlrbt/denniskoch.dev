@@ -74,7 +74,7 @@
 
                             <div class="package-card__actions">
                                 <?php if ($package->docs_url): ?>
-                                    <a href="<?php echo $package->link; ?>" class="button">Docs</a>
+                                    <a href="<?php echo $package->docs_url; ?>" class="button">Docs</a>
                                 <?php endif; ?>
 
                                 <a href="<?php echo $package->link; ?>" class="button">
