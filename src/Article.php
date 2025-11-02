@@ -43,7 +43,7 @@ final class Article
         $path = ASSETS_PATH.'/images/articles/'.$this->slug.'/og.webp';
 
         return file_exists($path)
-            ? '/assets/images/articles/'.$this->slug.'.webp'
+            ? '/assets/images/articles/'.$this->slug.'/og.webp'
             : null;
     }
 
