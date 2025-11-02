@@ -118,7 +118,10 @@ final class Article
     {
         $articles = array_diff(scandir(self::ARTICLE_DIR), ['..', '.']);
 
-        return array_map(fn (string $file) => self::loadFile(self::ARTICLE_DIR . $file), $articles);
+        $articles = array_map(fn (string $file) => self::loadFile(self::ARTICLE_DIR . $file), $articles);
+        usort($articles, fn (self $a, self $b) => $b->created_at <=> $a->created_at);
+
+        return $articles;
     }
 
     /**
