@@ -5,7 +5,7 @@
         max-width: 100%;
     }
 
-    code {
+    code:not(:where(.phiki *)) {
         font-size: .8em;
         padding: 0.1em 0.25em;
         background: rgba(255 255 255 / .15);
