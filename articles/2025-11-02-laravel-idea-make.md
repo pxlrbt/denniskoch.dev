@@ -1,6 +1,6 @@
 ---
 title: Automatic Autocompletion For make()
-description: How Laravel Idea can help you reduce repetition
+description: How Laravel Idea can help you reduce repetition when using make() methods
 tags: [ "Laravel", "PhpStorm" ]
 seo_keywords: [ "Laravel", "PhpStorm", "Laravel Idea", "IDE" ]
 created_at: 2025-11-02
