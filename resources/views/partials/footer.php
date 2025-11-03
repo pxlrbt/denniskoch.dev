@@ -15,13 +15,7 @@
         </div>
     </footer>
 
-    <script>
-        document.querySelectorAll('[data-tooltip]').forEach(el => {
-            const tooltip = el.getAttribute('data-tooltip');
-            el.style.setProperty('anchor-name', '--'+tooltip);
-            el.querySelector('[popover]').style.setProperty('position-anchor', '--'+tooltip);
-        });
-    </script>
+    <script src="/assets/main.js?v=<?= filemtime(__DIR__.'/../../../public/assets/main.js') ?>" defer></script>
 </body>
 
 </html>
