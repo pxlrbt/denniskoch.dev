@@ -23,7 +23,8 @@ final class Article
         public string $description,
         public array $tags,
         public array $seo_keywords,
-        public string $content
+        public string $content,
+        public ?string $mastodonUrl = null,
     )
     {
     }
@@ -88,7 +89,8 @@ final class Article
             description: $frontMatter['description'] ?? '',
             tags: $frontMatter['tags'] ?? [],
             seo_keywords: $frontMatter['seo_keywords'] ?? [],
-            content: $data->getContent()
+            content: $data->getContent(),
+            mastodonUrl: $frontMatter['mastodon_url'] ?? null,
         );
     }
 

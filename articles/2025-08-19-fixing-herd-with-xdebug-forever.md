@@ -5,6 +5,7 @@ tags: [ "Herd", "Xdebug" ]
 seo_keywords: [ "Herd", "Xdebug", "PHP", "macOS" ]
 created_at: 2025-08-19
 updated_at: 2025-08-26
+mastodon_url: https://phpc.social/@denniskoch/115057175933137320
 ---
 
 ## My Xdebug Setup Broke &hellip; Again

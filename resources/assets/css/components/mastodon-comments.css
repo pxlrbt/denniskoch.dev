@@ -1,0 +1,59 @@
+.mastodon-comments {
+    display: grid;
+    margin-block: var(--spacing-y);
+
+}
+
+.mastodon-comment {
+    padding-block: calc(var(--spacing-y) * 1.5);
+
+    &.-nested {
+        margin-inline-start: 1rem;
+        padding-inline-start: 2rem;
+        border-left: 1px solid var(--color-peach-light);
+    }
+
+    header {
+        display: flex;
+        gap: calc(var(--spacing-x) / 1.5);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .mastodon-comment__avatar {
+        width: 3rem;
+        aspect-ratio: 1 / 1;
+
+        img {
+            border-radius: var(--rounding);
+            box-shadow: var(--shadow);
+            width: 3rem;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    .mastodon-comment__meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem
+    }
+
+    .mastodon-comment__author {
+        display: flex;
+        align-items: center;
+    }
+
+    .mastodon-comment__date {
+        font-size: .95rem;
+        opacity: 0.8;
+        margin-bottom: 0;
+    }
+
+    .mastodon-comment__body {
+        a {
+            font-weight: 500;
+        }
+    }
+}

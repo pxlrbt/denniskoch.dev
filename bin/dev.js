@@ -41,12 +41,30 @@ async function startDevServer() {
       publicPath: '/',
     });
 
-    await ctx.watch();
+    const ctxJS = await context({
+      entryPoints: ['./resources/assets/js/main.js'],
+      outfile: './public/assets/main.js',
+      bundle: true,
+      format: 'iife',
+      target: ['es2020'],
+      define: {
+        'process.env.NODE_ENV': '"development"'
+      },
+      external: ['/assets/fonts/*', '/assets/images/*'],
+      assetNames: '/[name]-[hash]',
+      publicPath: '/',
+    });
+
+    await Promise.all([ctx.watch(), ctxJS.watch()]);
     console.log('Watching for CSS changes...');
 
-    watch('./public/assets/dist').on('change', () => {
+    watch('./public/assets/*.css').on('change', () => {
       console.log('CSS file changed, injecting...');
       bs.reload('*.css');
+    });
+    watch('./public/assets/*.js').on('change', () => {
+      console.log('JS file changed, injecting...');
+      bs.reload('*.js');
     });
 
     console.log('Browsersync running at http://localhost:3000');
