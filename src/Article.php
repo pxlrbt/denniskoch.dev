@@ -118,10 +118,8 @@ final class Article
      */
     public static function all(): array
     {
-        $articles = array_diff(scandir(self::ARTICLE_DIR), ['..', '.']);
-
+        $articles = array_diff(scandir(self::ARTICLE_DIR, SCANDIR_SORT_DESCENDING), ['..', '.']);
         $articles = array_map(fn (string $file) => self::loadFile(self::ARTICLE_DIR . $file), $articles);
-        usort($articles, fn (self $a, self $b) => $b->created_at <=> $a->created_at);
 
         return $articles;
     }
@@ -131,7 +129,8 @@ final class Article
      */
     public static function get(int $offset = 0, int $limit = 10): array
     {
-        $articles = array_slice(array_diff(scandir(self::ARTICLE_DIR), ['..', '.']), $offset, $limit);
+        $articles = array_diff(scandir(self::ARTICLE_DIR, SCANDIR_SORT_DESCENDING), ['..', '.']);
+        $articles = array_slice($articles, $offset, $limit);
 
         return array_map(fn (string $file) => self::loadFile(self::ARTICLE_DIR . $file), $articles);
     }
