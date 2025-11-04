@@ -5,6 +5,7 @@ tags: [ "Laravel", "PhpStorm" ]
 seo_keywords: [ "Laravel", "PhpStorm", "Laravel Idea", "IDE" ]
 created_at: 2025-11-02
 updated_at: 2025-11-02
+mastodon_url: https://phpc.social/@denniskoch/115491571038061522
 ---
 
 ## Introduction
