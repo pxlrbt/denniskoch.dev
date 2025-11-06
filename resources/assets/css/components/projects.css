@@ -9,6 +9,25 @@
     @media (width > 60rem) {
         grid-template-columns: 1fr 1fr;
     }
+
+    &.-reversed {
+        @media (width > 60rem) {
+            :nth-child(1) {
+                order: 2;
+            }
+
+                :nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+
+    img {
+        --focus-outline-color: var(--color-peach);
+        --focus-outline-offset: 4px;
+        box-shadow: var(--shadow);
+        border-radius: var(--rounding);
+    }
 }
 
 .project-hero__actions {

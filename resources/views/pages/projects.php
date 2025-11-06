@@ -9,29 +9,48 @@
 
 <?php include __DIR__.'/../partials/header.php'; ?>
 
-    <div class="section wrapper projects">
-        <h1>Projects</h1>
+    <div class="wrapper projects">
+        <div class="section">
+            <h1>Projects</h1>
+            <!-- Filament Studio Section -->
+            <section id="filament-studio" class="project-hero">
+                <div class="project-hero__content text-wrap">
+                    <h2>Filament Studio</h2>
 
-        <!-- Filament Studio Section -->
-        <section id="filament-studio" class="section project-hero">
+                    <p class="text-wrap">
+                        A visual editor to build Filament Themes. Create beautiful, custom themes for your Filament applications
+                        with an intuitive interface, real-time preview, and professional design system.
+                    </p>
+
+                    <a href="https://filamentstudio.dev?utm_source=website" class="button" target="_blank">
+                        Visit Filament Studio
+                    </a>
+                </div>
+
+                <div class="project-hero__media">
+                    <video width="1728" height="1080" controls muted autoplay>
+                        <source src="/assets/filament-studio-avif.mp4" type="video/av01">
+                        <source src="/assets/filament-studio.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+        </div>
+
+        <section id="laramap" class="section project-hero -reversed">
             <div class="project-hero__content text-wrap">
-                <h2>Filament Studio</h2>
+                <h2>Laramap</h2>
 
                 <p class="text-wrap">
-                    A visual editor to build Filament Themes. Create beautiful, custom themes for your Filament applications
-                    with an intuitive interface, real-time preview, and professional design system.
+                    A community-driven map connecting Laravel artisans worldwide. Discover developers, connect, and grow together in the Laravel ecosystem.
                 </p>
 
-                <a href="https://filamentstudio.dev?utm_source=website" class="button" target="_blank">
-                    Visit Filament Studio
+                <a href="https://laramap.dev?utm_source=website" class="button" target="_blank">
+                    Visit Laramap
                 </a>
             </div>
 
-            <div class="project-hero__video">
-                <video width="1728" height="1080" controls muted autoplay>
-                    <source src="/assets/filament-studio-avif.mp4" type="video/av01">
-                    <source src="/assets/filament-studio.mp4" type="video/mp4">
-                </video>
+            <div class="project-hero__media">
+                <img src="/assets/laramap.webp" alt="Laramap" loading="lazy">
             </div>
         </section>
 
@@ -119,5 +138,6 @@
             </div>
         </section>
     </div>
+
 
 <?php include __DIR__.'/../partials/footer.php'; ?>
