@@ -24,4 +24,4 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 - **[Ebook: Complete Guide to CSS Flexbox and Grid](https://shrutibalasa.gumroad.com/l/css-flex-and-grid/BLACKFRIDAY25)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
 
 ## Starter Kits
-- **[Larafast](https://larafast.com), 50% off, `BLACKFRIDAY2025`
+- **[Larafast](https://larafast.com)**, 50% off, `BLACKFRIDAY2025`
