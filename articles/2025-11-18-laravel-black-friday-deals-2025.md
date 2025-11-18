@@ -13,6 +13,7 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 ## Filament
 
 - **[Plugin: Filament Spotlight Pro](https://filament.pxlrbt.de/spotlight-pro/)**, 20% off with `BF25`
+- **[Filament Studio](https://filamentstudio.dev/)**, 20% off with `BF25`
 - **[FilamentExamples.com](https://filamentexamples.com)**: 40% off with `FRIDAY25`
 
 ## Learning
