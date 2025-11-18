@@ -25,8 +25,11 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 
 ## Ebooks for Laravel
 
+- **[Battle Ready Laravel](https://battle-ready-laravel.com/?ref=denniskoch.dev)** by Ash Allen, 30% off with `30BLACKFRIDAY2025`
 - **[Complete Guide to CSS Flexbox and Grid](https://shrutibalasa.gumroad.com/l/css-flex-and-grid/BLACKFRIDAY25/?ref=denniskoch.dev)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
-- **[Ebook: Level up with Tailwind CSS](https://shrutibalasa.gumroad.com/l/level-up-with-tailwind-css/BLACKFRIDAY25/?ref=denniskoch.dev)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
+- **[Consuming APIs in Laravel](https://consuming-apis-in-laravel.com/?ref=denniskoch.dev)** by Ash Allen, 30% off with `30BLACKFRIDAY2025`
+- **[Level up with Tailwind CSS](https://shrutibalasa.gumroad.com/l/level-up-with-tailwind-css/BLACKFRIDAY25/?ref=denniskoch.dev)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
+- **[The Web Dev's Guide to Freelancing](https://web-dev-freelancing.com/?ref=denniskoch.dev)** by Ash Allen, 30% off with `50BLACKFRIDAY2025`
 
 ## Starter Kits & Admin Panels for Laravel
 
