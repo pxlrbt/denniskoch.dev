@@ -30,9 +30,8 @@
 
     .article {
         display: flex;
-        font-display: column;
+        flex-direction: column;
         gap: calc(var(--spacing-y) * 0.25) var(--spacing-x);
-        align-items: center;
         max-width: var(--max-text-width);
 
         text-decoration: none;

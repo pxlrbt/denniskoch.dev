@@ -1,28 +1,37 @@
 ---
-title: Black Friday Deals for Laravel – 2025
-description: Collection of Black Friday deals for the Laravel community.
-tags: [ "Laravel" ]
-seo_keywords: [ "Laravel", "Black Friday", "Deal", "Coupon", "2025" ]
+title: Black Friday Deals for Filament & Laravel – 2025
+description: Collection of Black Friday deals for the Filament and Laravel community.
+tags: [ "Laravel", "Filament"]
+seo_keywords: [ "Laravel", "Filament", "Black Friday", "Deal", "Coupon", "2025" ]
 created_at: 2025-11-18
 updated_at: 2025-11-18
 mastodon_url: null
 ---
 
-Black Friday is just around the corner (28th November), and I'm working on a collection of deals for Laravel and Filament.
+Black Friday is just around the corner (28th November), and I'm working on a collection of deals for Filament and Laravel.
 
 ## Filament
+- **[Custom Fields](https://custom-fields.relaticle.com/?ref=denniskoch.dev)**, 30% off with `BUILDFASTER30`
+- **[FilaForms](https://filaforms.app/?ref=denniskoch.dev)**, 30% off with `BUILDFASTER30`
+- **[FilamentExamples.com](https://filamentexamples.com/?ref=denniskoch.dev)**: 40% off with `FRIDAY25`
+- **[Filament Studio](https://filamentstudio.dev/?ref=denniskoch.dev)**, 20% off with `BF25`
+- **[Spotlight Pro](https://filament.pxlrbt.de/spotlight-pro/?ref=denniskoch.dev)**, 20% off with `BF25`
 
-- **[Plugin: Filament Spotlight Pro](https://filament.pxlrbt.de/spotlight-pro/)**, 20% off with `BF25`
-- **[Filament Studio](https://filamentstudio.dev/)**, 20% off with `BF25`
-- **[FilamentExamples.com](https://filamentexamples.com)**: 40% off with `FRIDAY25`
+## Laravel Learning Resources
 
-## Learning
+- **[Codecourse](https://codecourse.com/?ref=denniskoch.dev)**, 50% off with `BLACKFRIDAY2025`
+- **[FilamentExamples.com](https://filamentexamples.com/?ref=denniskoch.dev)**: 40% off with `FRIDAY25`
+- **[LaravelDaily.com](https://laraveldaily.com/?ref=denniskoch.dev)**: 40% off, no coupon needed.
 
-- **[LaravelDaily.com](https://laraveldaily.com)**: 40% off, no coupon needed.
-- **[FilamentExamples.com](https://filamentexamples.com)**: 40% off with `FRIDAY25`
-- **[Codecourse](https://codecourse.com)**, 50% off with `BLACKFRIDAY2025`
-- **[Ebook: Level up with Tailwind CSS](https://shrutibalasa.gumroad.com/l/level-up-with-tailwind-css/BLACKFRIDAY25)**, by Shruti Balasa, 60% off with `BLACKFRIDAY25`
-- **[Ebook: Complete Guide to CSS Flexbox and Grid](https://shrutibalasa.gumroad.com/l/css-flex-and-grid/BLACKFRIDAY25)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
+## Ebooks for Laravel
 
-## Starter Kits
-- **[Larafast](https://larafast.com)**, 50% off, `BLACKFRIDAY2025`
+- **[Complete Guide to CSS Flexbox and Grid](https://shrutibalasa.gumroad.com/l/css-flex-and-grid/BLACKFRIDAY25/?ref=denniskoch.dev)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
+- **[Ebook: Level up with Tailwind CSS](https://shrutibalasa.gumroad.com/l/level-up-with-tailwind-css/BLACKFRIDAY25/?ref=denniskoch.dev)**, by Shruti Balasa, 60% off with `BLACKFRIDAY25`
+
+## Starter Kits & Admin Panels for Laravel
+
+- **[Backpack for Laravel](https://backpackforlaravel.com/?ref=denniskoch.dev)**, 50% off with `BLACKWEEK2025`
+- **[Larafast](https://larafast.com/?ref=denniskoch.dev)**, 50% off with `BLACKFRIDAY2025`
+
+## Services for Laravel
+- **[Lettermint](https://lettermint.co/?ref=denniskoch.dev)**, 30% off all Lettermint plans for the next 6 months with code `BF2025`
