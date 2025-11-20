@@ -4,7 +4,7 @@ description: Collection of Black Friday deals for the Filament and Laravel commu
 tags: [ "Laravel", "Filament"]
 seo_keywords: [ "Laravel", "Filament", "Black Friday", "Deal", "Coupon", "2025" ]
 created_at: 2025-11-18
-updated_at: 2025-11-18
+updated_at: 2025-11-19
 mastodon_url: null
 ---
 
@@ -26,6 +26,7 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 ## Ebooks for Laravel
 
 - **[Battle Ready Laravel](https://battle-ready-laravel.com/?ref=denniskoch.dev)** by Ash Allen, 30% off with `30BLACKFRIDAY2025`
+- **[Best Practices for Laravel Enterprise Applications](https://wendelladriel.com/best-practices-for-laravel-enterprise-applications?ref=denniskoch.dev) by Wendell Adriel,50% off with `BLACKFRIDAY`
 - **[Complete Guide to CSS Flexbox and Grid](https://shrutibalasa.gumroad.com/l/css-flex-and-grid/BLACKFRIDAY25/?ref=denniskoch.dev)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
 - **[Consuming APIs in Laravel](https://consuming-apis-in-laravel.com/?ref=denniskoch.dev)** by Ash Allen, 30% off with `30BLACKFRIDAY2025`
 - **[Level up with Tailwind CSS](https://shrutibalasa.gumroad.com/l/level-up-with-tailwind-css/BLACKFRIDAY25/?ref=denniskoch.dev)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
