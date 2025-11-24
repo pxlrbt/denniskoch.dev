@@ -41,6 +41,7 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 
 - **[Codecourse](https://codecourse.com/?ref=denniskoch.dev)**, 50% off with `BLACKFRIDAY2025`
 - **[FilamentExamples.com](https://filamentexamples.com/?ref=denniskoch.dev)**: 40% off with `FRIDAY25`
+- **[Laracasts](https://laracasts.com/?ref=denniskoch.dev)**: 50% off, no coupon needed.
 - **[LaravelDaily.com](https://laraveldaily.com/?ref=denniskoch.dev)**: 40% off, no coupon needed.
 
 ## Ebooks for Laravel
