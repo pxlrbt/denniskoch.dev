@@ -11,16 +11,23 @@ mastodon_url: null
 Black Friday is just around the corner (28th November), and I'm working on a collection of deals for Filament and Laravel.
 
 ## Filament
+
 - **[Custom Fields](https://custom-fields.relaticle.com/?ref=denniskoch.dev)**, 30% off with `BUILDFASTER30`
 - **[FilaForms](https://filaforms.app/?ref=denniskoch.dev)**, 30% off with `BUILDFASTER30`
-- **[FilaFly Themes](https://filafly.com/themes?ref=denniskoch.dev)**,50% off with `BF2025`
+- **[FilaFly Themes](https://filafly.com/themes?ref=denniskoch.dev)**, 50% off with `BF2025`
 - **[FilamentExamples.com](https://filamentexamples.com/?ref=denniskoch.dev)**: 40% off with `FRIDAY25`
 - **[Filament Studio](https://filamentstudio.dev/?ref=denniskoch.dev)**, 20% off with `BF25`
 - **[LaraZeus Plugins](https://larazeus.com/packages/premium?ref=denniskoch.dev)**, 30% off applied at checkout
 - **[Spotlight Pro](https://filament.pxlrbt.de/spotlight-pro/?ref=denniskoch.dev)**, 20% off with `BF25`
 
 ## Services for Laravel
+
 - **[Lettermint](https://lettermint.co/?ref=denniskoch.dev)**, 30% off all Lettermint plans for the next 6 months with code `BF2025`
+
+## Tools for Laravel
+
+- **[Herd Pro](https://herd.laravel.com/?ref=denniskoch.dev#plans)**, 30% off, no code needed
+- **[Ray](https://spatie.be/products/ray?ref=denniskoch.dev)**, 30% off, no code needed
 
 ## Components, Starter Kits, Admin Panels for Laravel
 
@@ -50,8 +57,3 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 - **[Testing Laravel](https://spatie.be/products/testing-laravel?ref=denniskoch.dev)** by Spatie, 30% off
 - **[The Web Dev's Guide to Freelancing](https://web-dev-freelancing.com/?ref=denniskoch.dev)** by Ash Allen, 30% off with `50BLACKFRIDAY2025`
 - **[Writing Readable PHP](https://spatie.be/products/writing-readable-php?ref=denniskoch.dev)** by Spatie, 30% off
-
-## Tools for Laravel
-
-- **[Herd Pro](https://herd.laravel.com/?ref=denniskoch.dev#plans)**, 30% off, no code needed
-- **[Ray](https://spatie.be/products/ray?ref=denniskoch.dev)**, 30% off, no code needed
