@@ -29,9 +29,9 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 ## Tools for Laravel
 
 - **[Herd Pro](https://herd.laravel.com/?ref=denniskoch.dev#plans)**, 30% off, no code needed
+- **[Observer](https://observer.dev?ref=denniskoch.dev)**, 30% off with `BLACKFRIDAY`
 - **[Ray](https://spatie.be/products/ray?ref=denniskoch.dev)**, 30% off, no code needed
 - **[Tinkerwell](https://tinkerwell.app/#pricing?ref=denniskoch.dev)**, 25% off, no code needed
-- **[Observer](https://observer.dev?ref=denniskoch.dev)**, 30% off with `BLACKFRIDAY`
 
 ## Components, Starter Kits, Admin Panels for Laravel
 
