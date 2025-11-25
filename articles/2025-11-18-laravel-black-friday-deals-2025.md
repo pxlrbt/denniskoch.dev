@@ -31,6 +31,7 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 - **[Herd Pro](https://herd.laravel.com/?ref=denniskoch.dev#plans)**, 30% off, no code needed
 - **[Ray](https://spatie.be/products/ray?ref=denniskoch.dev)**, 30% off, no code needed
 - **[Tinkerwell](https://tinkerwell.app/#pricing?ref=denniskoch.dev)**, 25% off, no code needed
+- **[Observer](https://observer.dev?ref=denniskoch.dev)**, 30% off with `BLACKFRIDAY`
 
 ## Components, Starter Kits, Admin Panels for Laravel
 
@@ -41,6 +42,7 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 - **[Media Library Pro](https://spatie.be/products/media-library-pro?ref=denniskoch.dev)**, 30% off, no code needed
 - **[Laravel Comments](https://spatie.be/products/laravel-comments?ref=denniskoch.dev)**, 30% off, no code needed
 - **[Tailwind Plus](https://tailwindcss.com/plus/black-friday?ref=denniskoch.dev)**, 20% off
+- **[Wire Elements Pro](https://wire-elements.dev/pro?ref=denniskoch.dev)**, 30% off with `BLACKFRIDAY`
 
 ## Laravel Learning Resources & Courses
 
