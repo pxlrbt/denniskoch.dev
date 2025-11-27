@@ -111,7 +111,7 @@
 
             <div class="talk-card">
                 <div class="talk-card__thumbnail">
-                    <img src="./assets/images/filament-v4-talk.webp" alt="Laravel Switzerland Meetup Talk" loading="lazy">
+                    <img src="/assets/images/filament-v4-talk.webp" alt="Laravel Switzerland Meetup Talk" loading="lazy">
                 </div>
 
                 <div class="talk-card__content">
