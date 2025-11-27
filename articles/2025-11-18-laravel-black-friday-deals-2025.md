@@ -4,7 +4,7 @@ description: Collection of Black Friday deals for the Filament and Laravel commu
 tags: [ "Laravel", "Filament"]
 seo_keywords: [ "Laravel", "Filament", "Black Friday", "Deal", "Coupon", "2025" ]
 created_at: 2025-11-18
-updated_at: 2025-11-25
+updated_at: 2025-11-27
 mastodon_url: null
 ---
 
@@ -28,6 +28,7 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 
 ## Tools for Laravel
 
+- **[Dev Dojo](https://devdojo.com/blackfriday?ref=denniskoch.dev)**, 40% off
 - **[Herd Pro](https://herd.laravel.com/?ref=denniskoch.dev#plans)**, 30% off, no code needed
 - **[Observer](https://observer.dev?ref=denniskoch.dev)**, 30% off with `BLACKFRIDAY`
 - **[Ray](https://spatie.be/products/ray?ref=denniskoch.dev)**, 30% off, no code needed
@@ -59,6 +60,7 @@ Black Friday is just around the corner (28th November), and I'm working on a col
 - **[Best Practices for Laravel Enterprise Applications](https://wendelladriel.com/best-practices-for-laravel-enterprise-applications?ref=denniskoch.dev)** by Wendell Adriel,50% off with `BLACKFRIDAY`
 - **[Complete Guide to CSS Flexbox and Grid](https://shrutibalasa.gumroad.com/l/css-flex-and-grid/BLACKFRIDAY25/?ref=denniskoch.dev)** by Shruti Balasa, 60% off with `BLACKFRIDAY25`
 - **[Consuming APIs in Laravel](https://consuming-apis-in-laravel.com/?ref=denniskoch.dev)** by Ash Allen, 30% off with `30BLACKFRIDAY2025`
+- **[Data Structures in PHP](https://ryangjchandler.lemonsqueezy.com/buy/ef8e5b93-1c3b-4e32-8bae-f0798e537f11?logo=0)** by Ryan Chandler, 50% off with `BF2025`
 - **[Event Sourcing in Laravel](https://spatie.be/products/event-sourcing-in-laravel?ref=denniskoch.dev)** by Spatie, 30% off
 - **[Front Line PHP](https://spatie.be/products/front-line-php?ref=denniskoch.dev)** by Spatie, 30% off
 - **[Laravel Package Training v2.0](https://spatie.be/products/laravel-package-training?ref=denniskoch.dev)** by Spatie, 30% off
