@@ -6,9 +6,9 @@
 
             <nav class="footer__nav" aria-label="Footer">
 
-                <a href="/imprint">Legal Notice</a>
+                <a href="/imprint/">Legal Notice</a>
 
-                <a href="/privacy">Privacy Policy</a>
+                <a href="/privacy/">Privacy Policy</a>
 
                 <a href="https://github.com/pxlrbt/denniskoch.dev">Source</a>
             </nav>

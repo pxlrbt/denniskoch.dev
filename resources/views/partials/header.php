@@ -9,6 +9,7 @@
 
     <meta name="description" content="<?php echo $description ?? 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.'; ?>">
     <meta name="keywords" content="<?php echo $keywords ?? 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions'; ?>">
+    <link rel="canonical" href="https://denniskoch.dev<?= htmlspecialchars($uri); ?>">
 
     <meta property="og:image" content="<?= $ogImage ?? '/assets/images/og.webp'; ?>">
     <meta property="og:image:width" content="1200">
@@ -112,8 +113,8 @@
 
                 <ul>
                     <li><a href="/" class="<?php echo ($uri === '/') ? 'active' : ''; ?>">Home</a></li>
-                    <li><a href="/articles" class="<?php echo (str_starts_with($uri, '/articles')) ? 'active' : ''; ?>">Articles</a></li>
-                    <li><a href="/projects" class="<?php echo ($uri === '/projects') ? 'active' : ''; ?>">Projects</a></li>
+                    <li><a href="/articles/" class="<?php echo (str_starts_with($uri, '/articles/')) ? 'active' : ''; ?>">Articles</a></li>
+                    <li><a href="/projects/" class="<?php echo ($uri === '/projects/') ? 'active' : ''; ?>">Projects</a></li>
                 </ul>
             </nav>
         </div>
