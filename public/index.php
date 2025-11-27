@@ -9,9 +9,20 @@ const VIEW_PATH = __DIR__ . '/../resources/views/pages/';
 
 $requestUri = $_SERVER['REQUEST_URI'];
 $path = parse_url($requestUri, PHP_URL_PATH);
+$query = parse_url($requestUri, PHP_URL_QUERY)
+    ? '?' . parse_url($requestUri, PHP_URL_QUERY)
+    : '';
 
+// Old .php Redirect
+if (($index = stripos($path, '.php')) !== false) {
+    $path = substr($path, 0, $index) . '/';
+    header('Location: ' . $path . $query);
+    exit;
+}
+
+// Trailing Slash Redirect
 if (! str_ends_with($path, '/')) {
-    header('Location: ' . $path . '/' . (parse_url($requestUri, PHP_URL_QUERY) ? '?' . parse_url($requestUri, PHP_URL_QUERY) : ''));
+    header('Location: ' . $path . '/' . $query);
     exit;
 }
 
