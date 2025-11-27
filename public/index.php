@@ -7,12 +7,15 @@ const PUBLIC_PATH = __DIR__ . '/';
 const ASSETS_PATH = __DIR__ . '/assets';
 const VIEW_PATH = __DIR__ . '/../resources/views/pages/';
 
-if (! str_ends_with($_SERVER['REQUEST_URI'], '/')) {
-    header('Location: ' . $_SERVER['REQUEST_URI'] . '/');
+$requestUri = $_SERVER['REQUEST_URI'];
+$path = parse_url($requestUri, PHP_URL_PATH);
+
+if (! str_ends_with($path, '/')) {
+    header('Location: ' . $path . '/' . (parse_url($requestUri, PHP_URL_QUERY) ? '?' . parse_url($requestUri, PHP_URL_QUERY) : ''));
     exit;
 }
 
-$uri = $_SERVER['REQUEST_URI'] ?: '/';
+$uri = $path ?: '/';
 
 
 match (true) {
