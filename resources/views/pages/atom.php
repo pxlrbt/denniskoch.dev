@@ -22,7 +22,7 @@
 
     <?php foreach ($articles as $article): ?>
         <entry>
-            <title><?= $article->title ?></title>            <id><?= $article->url() ?></id>
+            <title><?= urldecode($article->title) ?></title>            <id><?= $article->url() ?></id>
             <link rel="alternate" type="text/html" href="<?= $article->url() ?>"/>
             <published><?= $article->created_at->format(DATE_RFC3339) ?></published>
             <updated><?= $article->updated_at->format(DATE_RFC3339) ?></updated>
