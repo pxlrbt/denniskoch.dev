@@ -62,6 +62,15 @@ h2 {
     margin-bottom: .25em;
 }
 
+h3 {
+    font-size: var(--text-md);
+    font-family: var(--font-headline);
+    color: var(--color-peach-medium);
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: .5em;
+}
+
 h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin-top: 2em;
