@@ -20,7 +20,7 @@
             <?php foreach (\App\Article::all() as $article): ?>
                 <article class="article">
                     <a
-                        href="articles/<?php echo $article->slug; ?>"
+                        href="/articles/<?php echo $article->slug; ?>"
                     >
                     <span style="view-transition-name: <?= $article->viewTransitionName(); ?>">
                         <?php echo $article->title; ?>
