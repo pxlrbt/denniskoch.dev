@@ -5,7 +5,7 @@ tags: [ "Laravel", "Notifications" ]
 seo_keywords: [ "Laravel Notifications", "AnonymousNotifiable", "Laravel Email Management", "Laravel Best Practices" ]
 created_at: 2026-01-19
 updated_at: 2026-01-19
-mastodon_url:
+mastodon_url: https://phpc.social/@denniskoch/115922511950386095
 status: ready
 ---
 
