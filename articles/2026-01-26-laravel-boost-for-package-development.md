@@ -5,7 +5,7 @@ tags: [ "Laravel" ]
 seo_keywords: [ "Laravel Boost", "Laravel Package Development", "Laravel Testbench", "Laravel Workbench", "Claude Code Laravel", "orchestral/testbench", "orchestral/workbench", "AI" ]
 created_at: 2026-01-26
 updated_at: 2026-01-26
-mastodon_url:
+mastodon_url: https://phpc.social/@denniskoch/115961212273853138
 ---
 
 ## The Problem
