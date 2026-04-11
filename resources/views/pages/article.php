@@ -18,13 +18,15 @@
         $ogImage = $article->ogImageUrl();
     }
 
+    $headline = json_encode($article->title);
+
     $head = <<<HTML
         <!-- SEO: Article -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
-                "headline": "{$article->title}",
+                "headline": "{$headline}",
                 "wordcount": "{$article->wordCount()}",
                 "timeRequired": "{$article->readingTimeInMinutes()} minutes",
                 "keywords": {$seoKeywords},
