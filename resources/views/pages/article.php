@@ -26,7 +26,7 @@
             {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
-                "headline": "{$headline}",
+                "headline": {$headline},
                 "wordcount": "{$article->wordCount()}",
                 "timeRequired": "{$article->readingTimeInMinutes()} minutes",
                 "keywords": {$seoKeywords},
