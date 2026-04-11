@@ -66,6 +66,8 @@ Then click `Edit Variables` and add `PROJECT_PATH` with the value `groovyScript(
 
 ![Video demonstrating tinkering in PhpStorm](/assets/images/articles/2027-01-23-you-might-not-need-tinkwell/demo.mp4)
 
+**NOTE:** PhpStorm 2026.1 broke Groovy Script support for Live Templates. Hopefully, this will be fixed with the next release ([YouTrack Issue](https://youtrack.jetbrains.com/issue/IJPL-241581/IDE-2026.1-broke-Live-Templates-with-groovyScript)).
+
 ## Wrapping Up
 
 Tinkerwell is an excellent app and worth every penny if you use it regularly, especially with its advanced features. However, it's always great to explore what PhpStorm already offers out of the box. If you don't need the advanced features and prefer working in PhpStorm, this might be the right choice for you.
