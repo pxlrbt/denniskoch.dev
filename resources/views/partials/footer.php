@@ -6,6 +6,8 @@
 
             <nav class="footer__nav" aria-label="Footer">
 
+                <a href="https://pixelarbeit.de">Hire Me</a>
+
                 <a href="/imprint/">Legal Notice</a>
 
                 <a href="/privacy/">Privacy Policy</a>

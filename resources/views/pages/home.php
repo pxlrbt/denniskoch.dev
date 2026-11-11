@@ -34,6 +34,7 @@
                         As a full-stack developer I specialize in
                         developing <em>custom web applications with Filament and Laravel</em>. Over the last <em>12 years</em> I worked
                         together with various clients to create tailored solutions that meet their unique needs.
+                        If you need a hand with your next project, you can hire me through my business <a href="https://pixelarbeit.de">pixelarbeit</a>.
                     </p>
 
                     <p>

@@ -1,0 +1,29 @@
+.hire-cta {
+    display: flex;
+    align-items: start;
+    gap: var(--spacing-x);
+    padding: var(--spacing-y) var(--spacing-x);
+    background: rgba(255 255 255 / .03);
+    border: 1px solid rgba(255 255 255 / .1);
+    border-radius: var(--rounding);
+
+    .rte + & {
+        margin-block-start: var(--spacing-section);
+    }
+
+    p {
+        margin-bottom: var(--spacing-y);
+    }
+}
+
+.hire-cta__title {
+    font-size: var(--text-md);
+    margin-bottom: 0.5em;
+}
+
+.hire-cta__image {
+    flex-shrink: 0;
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}

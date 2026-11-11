@@ -81,6 +81,8 @@
             <div class="rte">
                 <?php echo $article->content; ?>
             </div>
+
+            <?php include __DIR__.'/../partials/hire-cta.php'; ?>
         </article>
 
         <?php if ($article->mastodonUrl): ?>

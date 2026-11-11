@@ -36,6 +36,7 @@
     justify-content: center;
     gap: var(--spacing-x);
     font-size: var(--text-sm);
+    white-space: nowrap;
 
     @media (width > 30rem) {
         flex: 1 0 auto;
