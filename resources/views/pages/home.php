@@ -3,9 +3,6 @@
     use App\Article;
     use App\Project;
 
-    $title = 'Dennis Koch | Freelance Full-Stack-Developer';
-    $description = 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.';
-    $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
 
     $projects = Project::all();
 

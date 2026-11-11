@@ -1,7 +1,6 @@
 <?php
     $title = 'Privacy Policy | Dennis Koch';
     $description = 'Privacy policy details.';
-    $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
     $robots = 'noindex, follow';
 
     include __DIR__.'/../partials/header.php';

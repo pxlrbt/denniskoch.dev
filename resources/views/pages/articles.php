@@ -1,7 +1,6 @@
 <?php
     $title = 'Articles | Dennis Koch';
-    $description = 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.';
-    $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
+    $description = 'Articles about Laravel, Filament and PHP development by Dennis Koch.';
 ?>
 
 <?php include __DIR__.'/../partials/header.php'; ?>

@@ -2,8 +2,6 @@
     http_response_code(404);
 
     $title = 'Not Found | Dennis Koch';
-    $description = 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.';
-    $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
     $canonical = 'https://denniskoch.dev/articles.php';
 ?>
 

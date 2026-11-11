@@ -1,7 +1,6 @@
 <?php
     $title = 'Legal Notice | Dennis Koch';
     $description = 'Legal information and contact details for Dennis Koch.';
-    $keywords = 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions';
     $robots = 'noindex, follow';
 ?>
 

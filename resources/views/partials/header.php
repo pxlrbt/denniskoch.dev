@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale= 1.0">
 
-    <title><?php echo $title ?? 'Dennis Koch | Freelance Full-Stack-Developer'; ?></title>
+    <title><?php echo $title ?? 'Dennis Koch | Laravel & Filament Developer'; ?></title>
 
-    <meta name="description" content="<?php echo $description ?? 'Freelance Developer specializing in Filament and Laravel for custom web applications. With over 12 years of experience, I create tailored solutions that meet unique business needs.'; ?>">
-    <meta name="keywords" content="<?php echo $keywords ?? 'Freelance Developer, Full-Stack-Developer, Filament, Laravel, PHP, custom web applications, tailored solutions'; ?>">
+    <meta name="description" content="<?php echo $description ?? 'Personal site of Dennis Koch, Filament core team member and Laravel developer. Open source packages, Filament plugins and articles about PHP and web development.'; ?>">
+    <meta name="keywords" content="<?php echo $keywords ?? 'Dennis Koch, Laravel, Filament, PHP, open source, Filament plugins, articles'; ?>">
     <link rel="canonical" href="https://denniskoch.dev<?= htmlspecialchars($uri); ?>">
 
     <meta property="og:image" content="<?= $ogImage ?? '/assets/images/og.webp'; ?>">
@@ -43,7 +43,7 @@
             "image": "https://denniskoch.dev/assets/images/dennis-koch.webp",
             "gender": "male",
             "nationality": "German",
-            "description": "Freelance Full-Stack Developer specializing in Filament and Laravel for custom web applications.",
+            "description": "Laravel and Filament developer, Filament core team member and open source maintainer.",
             "jobTitle": "Full-Stack Developer",
             "sameAs": [
                 "https://phpc.social/@denniskoch",
